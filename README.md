@@ -9,7 +9,7 @@
 <p align="center">
   ECE Capstone, 2021
   <br>
-  <a href="https://github.com/jackchen0226/ECE486-RISCV-sim/"><strong>Github »</strong></a>
+  <a href="https://github.com/jackchen0226/ECE-Capstone-proj-7"><strong>Github »</strong></a>
   <br>
   <br>
 </p>
