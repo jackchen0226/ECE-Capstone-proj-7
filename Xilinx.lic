@@ -1,0 +1,380 @@
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Tue Nov 27 19:52:29 UTC 2018.
+#
+# This is license NODELOCKED to HOSTID=885348415645;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT opb_ethernet xilinxd 2019.11 permanent uncounted \
+B62C04E9BA03 \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,opb_ethernet,ip,permanent,_211633569_1777539552_210694204_960 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for opb_ethernet_v1
+FEATURE opb_ethernet_v1 xilinxd 1.0 permanent uncounted BDFFFBD91B83 \
+VENDOR_STRING=License_Type:Bought HOSTID=885348415645 \
+ISSUER=Xilinx NOTICE="The license for this core was generated \
+for gdimou@galois.com on 11/28/2018It is the responsibility of \
+the Licensee of this core to adhere to all terms and \
+conditions of the applicable license agreement when using this \
+core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_j
+FEATURE opb_ethernet_v1_00_j xilinxd 1.0 permanent uncounted \
+016C01F5E7A8 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_k
+FEATURE opb_ethernet_v1_00_k xilinxd 1.0 permanent uncounted \
+CAF10D8304D0 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_l
+FEATURE opb_ethernet_v1_00_l xilinxd 1.0 permanent uncounted \
+13333D0D35E8 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_00_m
+FEATURE opb_ethernet_v1_00_m xilinxd 1.0 permanent uncounted \
+4FFA618B7A00 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for opb_ethernet_v1_01_a
+FEATURE opb_ethernet_v1_01_a xilinxd 1.0 permanent uncounted \
+67BC47783DA3 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT plb_ethernet xilinxd 2019.11 permanent uncounted \
+BC3C60BF5EAD \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,plb_ethernet,ip,permanent,_211633569_1777539552_210694204_949 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for plb_ethernet_v1_00_a
+FEATURE plb_ethernet_v1_00_a xilinxd 1.0 permanent uncounted \
+11B74F32121A VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for plb_ethernet_v1
+FEATURE plb_ethernet_v1 xilinxd 1.0 permanent uncounted 093F0496F848 \
+VENDOR_STRING=License_Type:Bought HOSTID=885348415645 \
+ISSUER=Xilinx NOTICE="The license for this core was generated \
+for gdimou@galois.com on 11/28/2018It is the responsibility of \
+the Licensee of this core to adhere to all terms and \
+conditions of the applicable license agreement when using this \
+core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT plb_temac xilinxd 2019.11 permanent uncounted 9C78F8FC7D5E \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,plb_temac,ip,permanent,_211633569_1777539552_210694204_448 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for plb_temac_v1
+FEATURE plb_temac_v1 xilinxd 1.0 permanent uncounted 0010898BBAEE \
+VENDOR_STRING=License_Type:Bought HOSTID=885348415645 \
+ISSUER=Xilinx NOTICE="The license for this core was generated \
+for gdimou@galois.com on 11/28/2018It is the responsibility of \
+the Licensee of this core to adhere to all terms and \
+conditions of the applicable license agreement when using this \
+core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT soft_temac_wrap xilinxd 2019.11 permanent uncounted \
+C5FE74B1DED8 \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,soft_temac_wrap,ip,permanent,_211633569_1777539552_210694204_326 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for soft_temac_wrap_v2
+FEATURE soft_temac_wrap_v2 xilinxd 1.0 permanent uncounted \
+53048BE6712D VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT tri_mode_eth_mac xilinxd 2019.11 permanent uncounted \
+521055ED03B5 \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,tri_mode_eth_mac,ip,permanent,_211633569_1777539552_210694204_323 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for tri_mode_eth_mac_v1_1
+FEATURE tri_mode_eth_mac_v1_1 xilinxd 1.0 permanent uncounted \
+3FC18CA33785 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for tri_mode_eth_mac_v2
+FEATURE tri_mode_eth_mac_v2 xilinxd 1.0 permanent uncounted \
+763A342FD7A7 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for tri_mode_eth_mac_v3
+FEATURE tri_mode_eth_mac_v3 xilinxd 1.0 permanent uncounted \
+DA04A85DB3D3 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# Licenses for tri_mode_eth_mac_v4
+FEATURE tri_mode_eth_mac_v4 xilinxd 1.0 permanent uncounted \
+0B0E2443635B VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT xps_ll_temac xilinxd 2019.11 permanent uncounted \
+B03B0DBF8304 \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,xps_ll_temac,ip,permanent,_211633569_1777539552_210694204_223 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for xps_ll_temac_v1
+FEATURE xps_ll_temac_v1 xilinxd 1.0 permanent uncounted 7528C4E642B1 \
+VENDOR_STRING=License_Type:Bought HOSTID=885348415645 \
+ISSUER=Xilinx NOTICE="The license for this core was generated \
+for gdimou@galois.com on 11/28/2018It is the responsibility of \
+the Licensee of this core to adhere to all terms and \
+conditions of the applicable license agreement when using this \
+core." TS_OK
+#
+# Licenses for xps_ll_temac_v2
+FEATURE xps_ll_temac_v2 xilinxd 1.0 permanent uncounted F4C2295D1CB5 \
+VENDOR_STRING=License_Type:Bought HOSTID=885348415645 \
+ISSUER=Xilinx NOTICE="The license for this core was generated \
+for gdimou@galois.com on 11/28/2018It is the responsibility of \
+the Licensee of this core to adhere to all terms and \
+conditions of the applicable license agreement when using this \
+core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT 10_100_mb_eth_mac xilinxd 2019.11 permanent uncounted \
+9B785EC2D969 \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,10_100_mb_eth_mac,ip,permanent,_211633569_1777539552_210694204_505 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# Licenses for 10_100_mb_eth_mac
+FEATURE 10_100_mb_eth_mac xilinxd 1.0 permanent uncounted \
+0C4252943233 VENDOR_STRING=License_Type:Bought \
+HOSTID=885348415645 ISSUER=Xilinx NOTICE="The license for this \
+core was generated for gdimou@galois.com on 11/28/2018It is \
+the responsibility of the Licensee of this core to adhere to \
+all terms and conditions of the applicable license agreement \
+when using this core." TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT axi_ethernet_soft_10_100 xilinxd 2019.11 permanent \
+uncounted 410E04FF367E \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,axi_ethernet_soft_10_100,ip,permanent,_211633569_1777539552_210694204_268 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT axi_ethernet_soft_tri_mode xilinxd 2019.11 permanent \
+uncounted 3F809354481D \
+VENDOR_STRING=License_Type:Bought;gdimou@galois.com,axi_ethernet_soft_tri_mode,ip,permanent,_211633569_1777539552_210694204_220 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" NOTICE="The license \
+for this core was generated for gdimou@galois.com on \
+11/28/2018It is the responsibility of the Licensee of this \
+core to adhere to all terms and conditions of the applicable \
+license agreement when using this core." START=27-Nov-2018 \
+TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT XCVU9P xilinxd 2019.11 permanent uncounted B2DE0383174C \
+VENDOR_STRING=gdimou@galois.com,XCVU9P,software,permanent,_211633569_1777539552_210695033_848 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" START=27-Nov-2018 \
+TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT board_vivado_design_edition xilinxd 2019.11 permanent \
+uncounted FE2A91BED8D9 \
+VENDOR_STRING=gdimou@galois.com,board_vivado_design_edition,software,permanent,_211633569_1777539552_210695033_346 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" START=27-Nov-2018 \
+TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT XCVU9P-ES1 xilinxd 2019.11 permanent uncounted E4DF605AAD51 \
+VENDOR_STRING=gdimou@galois.com,XCVU9P-ES1,software,permanent,_211633569_1777539552_210695033_944 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" START=27-Nov-2018 \
+TS_OK
+#
+# This is a permanent license generated on Tue Nov 27 19:52:29 UTC 2018
+INCREMENT XCVU9P-ES1_bitgen xilinxd 2019.11 permanent uncounted \
+74D05CEA5153 \
+VENDOR_STRING=gdimou@galois.com,XCVU9P-ES1_bitgen,software,permanent,_211633569_1777539552_210695033_262 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" START=27-Nov-2018 \
+TS_OK
+#
+#
+# This is a permanent license generated on Tue Apr 03 20:15:42 UTC 2018
+INCREMENT XC7K325T_LOGIC_EDITION xilinxd 2019.04 permanent uncounted \
+A97FF3A1EC40 \
+VENDOR_STRING=dmz,XC7K325T_LOGIC_EDITION,software,permanent,_211514141_1777533606_210679772_341 \
+HOSTID=885348415645 ISSUER="Xilinx Inc" START=03-Apr-2018 \
+TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE XC7K325T_LOGIC_EDITION xilinxd 2019.04 1952E3660A0B \
+COMPONENTS="ChipScopePro_SIOTK ChipscopePro ISIM PlanAhead \
+WebPACK PartialReconfiguration XC7K325T Simulation Analyzer" \
+OPTIONS=SUITE
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE board_vivado_design_edition xilinxd 2020.02 16CAF885AED3 \
+COMPONENTS="SDK PartialReconfiguration Simulation Analyzer \
+HLS" OPTIONS=SUITE
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE board_vivado_design_edition xilinxd 2019.11 3A8A44F37069 \
+COMPONENTS="SDK PartialReconfiguration Simulation Analyzer \
+HLS" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
+
+
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Mon Jan 06 19:58:20 UTC 2020.
+#
+# This is license NODELOCKED to HOSTID=004E01B6DD79;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Mon Jan 06 19:58:20 UTC 2020
+INCREMENT Vivado_Design_Edition xilinxd 2021.01 permanent uncounted \
+D3826A5B1378 \
+VENDOR_STRING=sosborn,Vivado_Design_Edition,software,permanent,_211720420_1777551167_210718847_608 \
+HOSTID=004e01b6dd79 ISSUER="Xilinx Inc" START=06-Jan-2020 \
+TS_OK
+#
+# This is a permanent license generated on Mon Jan 06 19:58:20 UTC 2020
+INCREMENT ISE_Embedded_Edition xilinxd 2021.01 permanent uncounted \
+D4C0779A8D03 \
+VENDOR_STRING=sosborn,ISE_Embedded_Edition,software,permanent,_211720420_1777551167_210718847_802 \
+HOSTID=004e01b6dd79 ISSUER="Xilinx Inc" START=06-Jan-2020 \
+TS_OK
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE Vivado_Design_Edition xilinxd 2021.01 7F9689476528 \
+COMPONENTS="SDK PartialReconfiguration Simulation \
+Implementation Analyzer HLS Synthesis" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+#
+# ----------------------------------------------------------------------
+#  The following PACKAGE definition is a REQUIRED part of this license:
+#
+PACKAGE ISE_Embedded_Edition xilinxd 2021.01 778E5AF9F3D4 \
+COMPONENTS="SDK ChipScopePro_SIOTK ChipscopePro ISE XPS ISIM \
+PlanAhead" OPTIONS=SUITE
+#
+# ------------------------------------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
+# ----- REMOVE LINES ABOVE HERE --------------------------
+#
+# This license is valid from Wed Jan 08 17:44:51 UTC 2020.
+#
+# This is license NODELOCKED to HOSTID=004E01B6DD79;
+# there is no need to run lmgrd for this license.
+#
+#
+# This is a permanent license generated on Wed Jan 08 17:44:51 UTC 2020
+INCREMENT EncryptedWriter_v2 xilinxd 2021.01 permanent uncounted \
+F7287EF15825 \
+VENDOR_STRING=sosborn,EncryptedWriter_v2,software,permanent,_211720420_1777551218_210718953_421 \
+HOSTID=004e01b6dd79 ISSUER="Xilinx Inc" START=08-Jan-2020 \
+TS_OK
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
