@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar  1 08:41:48 2021
+# Process ID: 38662
+# Current directory: /home/rwegter/vivado_projects/display_test
+# Command line: vivado
+# Log file: /home/rwegter/vivado_projects/display_test/vivado.log
+# Journal file: /home/rwegter/vivado_projects/display_test/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/rwegter/vivado_projects/display_test/display_test.xpr
+boost::filesystem::directory_iterator::construct: Permission denied: "/opt/Xilinx/Vivado/2019.1/data/boards/board_files/boot/efi"
+open_project /home/rwegter/vivado_projects/display_test/display_test.xpr
+boost::filesystem::directory_iterator::construct: Permission denied: "/opt/Xilinx/Vivado/2019.1/data/boards/board_files/boot/efi"
+ERROR: [Vivado 12-106] *** Exception: ui.utils.e: ui.frmwork.CommandFailedException: boost::filesystem::directory_iterator::construct: Permission denied: "/opt/Xilinx/Vivado/2019.1/data/boards/board_files/boot/efi" ui.frmwork.CommandFailedException: boost::filesystem::directory_iterator::construct: Permission denied: "/opt/Xilinx/Vivado/2019.1/data/boards/board_files/boot/efi"
+	at ui.project.projecti.ProjUtils_createBoardPartIter(Native Method)
+	at ui.data.a.N(SourceFile:39)
+	at ui.views.C.a.fWc(SourceFile:139)
+	at ui.views.C.D.fWc(SourceFile:252)
+	at ui.views.C.n.update(SourceFile:837)
+	at ui.views.C.n.reset(SourceFile:901)
+	at ui.views.C.n.<init>(SourceFile:739)
+	at ui.views.C.d.bj(SourceFile:84)
+	at ui.views.C.d.<init>(SourceFile:79)
+	at ui.views.C.a.init(SourceFile:55)
+	at ui.views.C.a.<init>(SourceFile:42)
+	at ui.views.C.D.<init>(SourceFile:247)
+	at ui.views.C.B.bk(SourceFile:247)
+	at ui.views.C.B.bj(SourceFile:387)
+	at ui.views.C.B.<init>(SourceFile:62)
+	at ui.views.C.B.<init>(SourceFile:56)
+	at ui.b.G.b.T.<init>(SourceFile:522)
+	at ui.b.G.b.P.<init>(SourceFile:522)
+	at ui.b.G.b.P.<init>(SourceFile:495)
+	at ui.b.G.b.f.a(SourceFile:189)
+	at ui.utils.i.l.i.eFn(SourceFile:273)
+	at ui.b.G.b.f.<init>(SourceFile:137)
+	at ui.b.G.b.f.<init>(SourceFile:132)
+	at ui.views.c.s.g.run(SourceFile:64)
+	at ui.frmwork.a.dWF(SourceFile:132)
+	at ui.views.r.e.actionPerformed(SourceFile:820)
+	at ui.utils.o.b.j.actionPerformed(SourceFile:109)
+	at java.desktop/javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at ui.utils.o.b.k.fireActionPerformed(SourceFile:140)
+	at java.desktop/javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at java.desktop/javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at java.desktop/javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at com.jidesoft.plaf.basic.BasicJideButtonListener.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+	at java.desktop/java.awt.Component.processMouseEvent(Unknown Source)
+	at java.desktop/javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.Component.processEvent(Unknown Source)
+	at java.desktop/java.awt.Container.processEvent(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.Component.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue.access$500(Unknown Source)
+	at java.desktop/java.awt.EventQueue$3.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$3.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+ (See /home/rwegter/vivado_projects/display_test/vivado_pid38662.debug)
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  1 08:49:14 2021...
