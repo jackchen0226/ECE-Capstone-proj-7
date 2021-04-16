@@ -1,0 +1,49 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.sim/sim_1/synth/func/xsim/top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_clk_wiz_0_2
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_clk_wiz_0_2_vcu_DT_blk_design_clk_wiz_0_2_clk_wiz
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_vga_core_0_0
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_vga_core_0_0_vga_core
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_vga_core_0_0_vga_timing
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_wrapper
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_xlconstant_0_0
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_xlslice_0_0
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_xlslice_0_1
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_xlslice_1_0
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_xlslice_2_0
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_counter_binary_v12_0_13
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_addsub_v12_0_13_fabric_legacy
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_addsub_v12_0_13_legacy
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_addsub_v12_0_13_lut6_legacy
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_counter_binary_v12_0_13_legacy
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_counter_binary_v12_0_13_viv
+INFO: [VRFC 10-311] analyzing module vcu_DT_blk_design_c_counter_binary_0_0__c_reg_fd_v12_0_6_viv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_core
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:151]
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:152]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/rwegter/icebreaker-examples/dvi-12bit/vga_timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:111]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'CLK' when default_nettype is none [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:61]
+ERROR: [VRFC 10-3594] non-net port 'CLK' cannot be of mode input [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:61]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'LEDR_N' when default_nettype is none [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:63]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'LEDG_N' when default_nettype is none [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:64]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'BTN_N' when default_nettype is none [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:65]
+ERROR: [VRFC 10-3594] non-net port 'BTN_N' cannot be of mode input [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:65]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'P1A1' when default_nettype is none [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:67]
+ERROR: [VRFC 10-1103] net type must be explicitly specified for 'P1B1' when default_nettype is none [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:68]
+ERROR: [VRFC 10-845] illegal operand for operator ~ [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:91]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ok_led_loc is not permitted, left-hand side should be reg/integer/time/genvar [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:135]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ok_led_loc is not permitted, left-hand side should be reg/integer/time/genvar [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:139]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ok_led_loc is not permitted, left-hand side should be reg/integer/time/genvar [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:143]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'LEDG_N' is not permitted [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:154]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'P1A1' is not permitted [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:197]
+ERROR: [VRFC 10-818] illegal expression in target [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:197]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'P1B1' is not permitted [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:199]
+ERROR: [VRFC 10-818] illegal expression in target [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:199]
+ERROR: [VRFC 10-2865] module 'top' ignored due to previous errors [/home/rwegter/icebreaker-examples/dvi-12bit/dvi-12bit.v:59]

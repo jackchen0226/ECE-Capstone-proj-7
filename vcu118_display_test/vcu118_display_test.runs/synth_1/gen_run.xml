@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcvu9p-flga2104-2L-e" LaunchTime="1617045254">
+  <File Type="VDS-TIMING-PB" Name="vcu_DT_blk_design_wrapper_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vcu_DT_blk_design_wrapper_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="vcu_DT_blk_design_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="vcu_DT_blk_design_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="vcu_DT_blk_design_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="vcu_DT_blk_design_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="vcu_DT_blk_design_wrapper.vds"/>
+  <File Type="REPORTS-TCL" Name="vcu_DT_blk_design_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="vcu_DT_blk_design_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../icebreaker-examples/dvi-12bit/vga_timing.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../icebreaker-examples/dvi-12bit/vga_core.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/vcu_DT_blk_design/vcu_DT_blk_design.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/vcu_DT_blk_design/hdl/vcu_DT_blk_design_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../icebreaker-examples/dvi-12bit/dvi-12bit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../ip_repo/vcu118_display_test_v1/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="vcu_DT_blk_design_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/vcu_DT_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/vcu_DT_top.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="vcu_DT_blk_design_clk_wiz_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="vcu_DT_blk_design_vga_core_0_0"/>
+</GenRun>

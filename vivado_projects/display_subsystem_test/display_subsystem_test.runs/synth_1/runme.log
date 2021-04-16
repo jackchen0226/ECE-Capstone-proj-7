@@ -1,0 +1,551 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 130549 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1871.340 ; gain = 152.688 ; free physical = 868 ; free virtual = 12986
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (1#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'design_1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:182]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_2' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_2/synth/design_1_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (2#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_2' (3#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_2/synth/design_1_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_1_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_clk_wiz_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_1_1' (4#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_clk_wiz_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (4#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_1' (5#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_1' (6#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_mdm_1_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (7#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_microblaze_0_axi_intc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_1' (8#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_microblaze_0_axi_intc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:491]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1093]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (9#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1093]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1225]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (10#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_auto_cc_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'design_1_auto_cc_0' has 42 connections declared, but only 40 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1388]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (11#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1225]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1431]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (12#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1431]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1797]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (13#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1797]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (14#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_arprot' does not match port width (9) of module 'design_1_xbar_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1054]
+WARNING: [Synth 8-689] width (6) of port connection 'm_axi_awprot' does not match port width (9) of module 'design_1_xbar_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1058]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_1' (15#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:491]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1563]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_1' (16#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_dlmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_dlmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_1' (17#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_dlmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'design_1_dlmb_v10_1' has 25 connections declared, but only 24 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1709]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_1' (18#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_ilmb_bram_if_cntlr_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_ilmb_v10_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_1' (19#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_ilmb_v10_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'design_1_ilmb_v10_1' has 25 connections declared, but only 24 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1755]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_lmb_bram_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_1' (20#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_lmb_bram_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'design_1_lmb_bram_1' has 16 connections declared, but only 14 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1780]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (21#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:1563]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (22#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:411]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 23 - type: integer 
+	Parameter DIN_TO bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (22#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (23#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_1_100M_1' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_rst_clk_wiz_1_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_1_100M_1' (24#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_rst_clk_wiz_1_100M_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'design_1_rst_clk_wiz_1_100M_1' has 10 connections declared, but only 9 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:421]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_axi4s_vid_out_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_axi4s_vid_out_0_0' (25#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_v_axi4s_vid_out_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_axi4s_vid_out_0' of module 'design_1_v_axi4s_vid_out_0_0' has 29 connections declared, but only 21 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:431]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_tc_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_v_tc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tc_0_0' (26#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_v_tc_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_tc_0' of module 'design_1_v_tc_0_0' has 10 connections declared, but only 9 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:453]
+INFO: [Synth 8-6157] synthesizing module 'design_1_v_tpg_0_0' [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_v_tpg_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_v_tpg_0_0' (27#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/.Xil/Vivado-130497-WT-SP4U/realtime/design_1_v_tpg_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'v_tpg_0' of module 'design_1_v_tpg_0_0' has 31 connections declared, but only 25 given [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:463]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (28#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (29#1) [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_7ANRHB has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[12]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[11]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[10]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[9]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_araddr[8]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[12]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[11]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[10]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[9]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port S_AXI_awaddr[8]
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1931.059 ; gain = 212.406 ; free physical = 913 ; free virtual = 13005
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.027 ; gain = 216.375 ; free physical = 911 ; free virtual = 13004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1935.027 ; gain = 216.375 ; free physical = 911 ; free virtual = 13004
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_1/design_1_dlmb_v10_1/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_1/design_1_ilmb_v10_1/design_1_dlmb_v10_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_1/design_1_lmb_bram_1/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/design_1_xbar_1/design_1_xbar_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1/design_1_microblaze_0_axi_intc_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_1/design_1_mdm_1_1/design_1_mdm_1_1_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_1/design_1_rst_clk_wiz_1_100M_1/design_1_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_1/design_1_rst_clk_wiz_1_100M_1/design_1_rst_clk_wiz_1_100M_1_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0/design_1_v_tpg_0_0_in_context.xdc] for cell 'design_1_i/v_tpg_0'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_v_tpg_0_0/design_1_v_tpg_0_0/design_1_v_tpg_0_0_in_context.xdc] for cell 'design_1_i/v_tpg_0'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'design_1_i/v_axi4s_vid_out_0'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0/design_1_v_axi4s_vid_out_0_0_in_context.xdc] for cell 'design_1_i/v_axi4s_vid_out_0'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0/design_1_v_tc_0_0_in_context.xdc] for cell 'design_1_i/v_tc_0'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0/design_1_v_tc_0_0_in_context.xdc] for cell 'design_1_i/v_tc_0'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m01_couplers/auto_cc'
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m01_couplers/auto_cc'
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/constrs_1/new/top.xdc]
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/constrs_1/new/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/constrs_1/new/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.668 ; gain = 0.000 ; free physical = 835 ; free virtual = 12909
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.668 ; gain = 0.000 ; free physical = 835 ; free virtual = 12909
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 920 ; free virtual = 12994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 920 ; free virtual = 12994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1/design_1_clk_wiz_1_1_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/v_tpg_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/v_axi4s_vid_out_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/v_tc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/red_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/green_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/blue_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m01_couplers/auto_cc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 920 ; free virtual = 12994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 921 ; free virtual = 12996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 914 ; free virtual = 12986
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Clk_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mdm_1/Dbg_Update_0' to pin 'design_1_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out1' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out2' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/clk_out3' to pin 'design_1_i/clk_wiz_1/bbstub_clk_out3/O'
+INFO: [Synth 8-5819] Moved 7 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 794 ; free virtual = 12870
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 794 ; free virtual = 12870
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 792 ; free virtual = 12868
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |design_1_xbar_1                  |         1|
+|2     |design_1_auto_cc_0               |         1|
+|3     |design_1_axi_uartlite_0_0        |         1|
+|4     |design_1_clk_wiz_1_1             |         1|
+|5     |design_1_mdm_1_1                 |         1|
+|6     |design_1_microblaze_0_0          |         1|
+|7     |design_1_microblaze_0_axi_intc_1 |         1|
+|8     |design_1_proc_sys_reset_0_0      |         1|
+|9     |design_1_rst_clk_wiz_1_100M_1    |         1|
+|10    |design_1_v_axi4s_vid_out_0_0     |         1|
+|11    |design_1_v_tc_0_0                |         1|
+|12    |design_1_v_tpg_0_0               |         1|
+|13    |design_1_dlmb_bram_if_cntlr_1    |         1|
+|14    |design_1_dlmb_v10_1              |         1|
+|15    |design_1_ilmb_bram_if_cntlr_1    |         1|
+|16    |design_1_ilmb_v10_1              |         1|
+|17    |design_1_lmb_bram_1              |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |design_1_auto_cc_0               |     1|
+|2     |design_1_axi_uartlite_0_0        |     1|
+|3     |design_1_clk_wiz_1_1             |     1|
+|4     |design_1_dlmb_bram_if_cntlr_1    |     1|
+|5     |design_1_dlmb_v10_1              |     1|
+|6     |design_1_ilmb_bram_if_cntlr_1    |     1|
+|7     |design_1_ilmb_v10_1              |     1|
+|8     |design_1_lmb_bram_1              |     1|
+|9     |design_1_mdm_1_1                 |     1|
+|10    |design_1_microblaze_0_0          |     1|
+|11    |design_1_microblaze_0_axi_intc_1 |     1|
+|12    |design_1_proc_sys_reset_0_0      |     1|
+|13    |design_1_rst_clk_wiz_1_100M_1    |     1|
+|14    |design_1_v_axi4s_vid_out_0_0     |     1|
+|15    |design_1_v_tc_0_0                |     1|
+|16    |design_1_v_tpg_0_0               |     1|
+|17    |design_1_xbar_1                  |     1|
+|18    |IBUF                             |     2|
+|19    |OBUF                             |    17|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+--------------------------------------+------+
+|      |Instance                      |Module                                |Cells |
++------+------------------------------+--------------------------------------+------+
+|1     |top                           |                                      |  1521|
+|2     |  design_1_i                  |design_1                              |  1502|
+|3     |    blue_2                    |design_1_xlslice_0_2                  |     0|
+|4     |    green_1                   |design_1_xlslice_0_1                  |     0|
+|5     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_1    |   478|
+|6     |      m01_couplers            |m01_couplers_imp_1UTB3Y5              |   104|
+|7     |    red_0                     |design_1_xlslice_0_0                  |     0|
+|8     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
++------+------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.637 ; gain = 328.984 ; free physical = 808 ; free virtual = 12884
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 2047.637 ; gain = 216.375 ; free physical = 857 ; free virtual = 12933
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2047.645 ; gain = 328.984 ; free physical = 857 ; free virtual = 12932
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2050.605 ; gain = 0.000 ; free physical = 808 ; free virtual = 12886
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2050.605 ; gain = 550.867 ; free physical = 896 ; free virtual = 12975
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2050.605 ; gain = 0.000 ; free physical = 896 ; free virtual = 12975
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 14 12:17:27 2021...

@@ -1,0 +1,447 @@
+
+*** Running vivado
+    with args -log vcu_DT_blk_design_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vcu_DT_blk_design_wrapper.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source vcu_DT_blk_design_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/rwegter/ip_repo/vcu118_display_test_v1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/rwegter/ip_repo/vcu118_display_test'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:VCU118_Display_Test:1.0'. The one found in IP location '/home/rwegter/ip_repo/vcu118_display_test_v1' will take precedence over the same IP in location /home/rwegter/ip_repo/vcu118_display_test
+Command: synth_design -top vcu_DT_blk_design_wrapper -part xcvu9p-flga2104-2L-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-86] Your Synthesis license expires in 1 day(s)
+INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5631 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2384.402 ; gain = 96.719 ; free physical = 1261 ; free virtual = 21729
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_wrapper' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/hdl/vcu_DT_blk_design_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/synth/vcu_DT_blk_design.v:13]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_xlslice_2_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_2_0/synth/vcu_DT_blk_design_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (1#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_xlslice_2_0' (2#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_2_0/synth/vcu_DT_blk_design_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_c_counter_binary_0_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/.Xil/Vivado-5561-WT-SP4U/realtime/vcu_DT_blk_design_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_c_counter_binary_0_0' (3#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/.Xil/Vivado-5561-WT-SP4U/realtime/vcu_DT_blk_design_c_counter_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_clk_wiz_0_3' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/.Xil/Vivado-5561-WT-SP4U/realtime/vcu_DT_blk_design_clk_wiz_0_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_clk_wiz_0_3' (4#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/.Xil/Vivado-5561-WT-SP4U/realtime/vcu_DT_blk_design_clk_wiz_0_3_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'vcu_DT_blk_design_clk_wiz_0_3' has 5 connections declared, but only 4 given [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/synth/vcu_DT_blk_design.v:66]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_xlslice_1_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_1_0/synth/vcu_DT_blk_design_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (4#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_xlslice_1_0' (5#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_1_0/synth/vcu_DT_blk_design_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_xlslice_0_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_0_0/synth/vcu_DT_blk_design_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 30 - type: integer 
+	Parameter DIN_TO bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (5#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_xlslice_0_0' (6#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_0_0/synth/vcu_DT_blk_design_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_xlslice_0_1' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_0_1/synth/vcu_DT_blk_design_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 23 - type: integer 
+	Parameter DIN_TO bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (6#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/f044/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_xlslice_0_1' (7#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlslice_0_1/synth/vcu_DT_blk_design_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_vga_core_0_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/.Xil/Vivado-5561-WT-SP4U/realtime/vcu_DT_blk_design_vga_core_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_vga_core_0_0' (8#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/.Xil/Vivado-5561-WT-SP4U/realtime/vcu_DT_blk_design_vga_core_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_xlconstant_0_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlconstant_0_0/synth/vcu_DT_blk_design_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (9#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_xlconstant_0_0' (10#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_xlconstant_0_0/synth/vcu_DT_blk_design_xlconstant_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design' (11#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/synth/vcu_DT_blk_design.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_wrapper' (12#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/hdl/vcu_DT_blk_design_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized2 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2439.152 ; gain = 151.469 ; free physical = 1283 ; free virtual = 21752
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2446.090 ; gain = 158.406 ; free physical = 1279 ; free virtual = 21748
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2446.090 ; gain = 158.406 ; free physical = 1279 ; free virtual = 21748
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_vga_core_0_0/vcu_DT_blk_design_vga_core_0_0/vcu_DT_blk_design_vga_core_0_0_in_context.xdc] for cell 'vcu_DT_blk_design_i/vga_core_0'
+Finished Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_vga_core_0_0/vcu_DT_blk_design_vga_core_0_0/vcu_DT_blk_design_vga_core_0_0_in_context.xdc] for cell 'vcu_DT_blk_design_i/vga_core_0'
+Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_c_counter_binary_0_0/vcu_DT_blk_design_c_counter_binary_0_0/vcu_DT_blk_design_c_counter_binary_0_0_in_context.xdc] for cell 'vcu_DT_blk_design_i/c_counter_binary_0'
+Finished Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_c_counter_binary_0_0/vcu_DT_blk_design_c_counter_binary_0_0/vcu_DT_blk_design_c_counter_binary_0_0_in_context.xdc] for cell 'vcu_DT_blk_design_i/c_counter_binary_0'
+Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3_in_context.xdc] for cell 'vcu_DT_blk_design_i/clk_wiz_0'
+Finished Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3_in_context.xdc] for cell 'vcu_DT_blk_design_i/clk_wiz_0'
+Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/constrs_1/new/vcu_DT_top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'user_si570_clock_clk_p'. [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/constrs_1/new/vcu_DT_top.xdc:41]
+Finished Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/constrs_1/new/vcu_DT_top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/constrs_1/new/vcu_DT_top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/vcu_DT_blk_design_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/constrs_1/new/vcu_DT_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vcu_DT_blk_design_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vcu_DT_blk_design_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2535.043 ; gain = 0.000 ; free physical = 1164 ; free virtual = 21634
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2535.043 ; gain = 0.000 ; free physical = 1164 ; free virtual = 21634
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.043 ; gain = 247.359 ; free physical = 1255 ; free virtual = 21726
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flga2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.043 ; gain = 247.359 ; free physical = 1255 ; free virtual = 21725
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk_125_clk_n. (constraint file  /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk_125_clk_n. (constraint file  /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk_125_clk_p. (constraint file  /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk_125_clk_p. (constraint file  /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3/vcu_DT_blk_design_clk_wiz_0_3_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/vga_core_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/zero. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/c_counter_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/mode. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/red_RnM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/green_RnM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/blue_RnM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vcu_DT_blk_design_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.043 ; gain = 247.359 ; free physical = 1258 ; free virtual = 21729
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2535.043 ; gain = 247.359 ; free physical = 1257 ; free virtual = 21728
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design vcu_DT_blk_design_xlslice_0_1 has unconnected port Din[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 2535.043 ; gain = 247.359 ; free physical = 1244 ; free virtual = 21718
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'vcu_DT_blk_design_i/clk_wiz_0/clk_out1' to pin 'vcu_DT_blk_design_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2892.324 ; gain = 604.641 ; free physical = 768 ; free virtual = 21236
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2892.324 ; gain = 604.641 ; free physical = 768 ; free virtual = 21236
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 2902.340 ; gain = 614.656 ; free physical = 766 ; free virtual = 21235
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |vcu_DT_blk_design_c_counter_binary_0_0 |         1|
+|2     |vcu_DT_blk_design_clk_wiz_0_3          |         1|
+|3     |vcu_DT_blk_design_vga_core_0_0         |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |vcu_DT_blk_design_c_counter_binary_0_0 |     1|
+|2     |vcu_DT_blk_design_clk_wiz_0_3          |     1|
+|3     |vcu_DT_blk_design_vga_core_0_0         |     1|
+|4     |IBUF                                   |     1|
+|5     |OBUF                                   |    16|
++------+---------------------------------------+------+
+
+Report Instance Areas: 
++------+----------------------+---------------------------------+------+
+|      |Instance              |Module                           |Cells |
++------+----------------------+---------------------------------+------+
+|1     |top                   |                                 |    78|
+|2     |  vcu_DT_blk_design_i |vcu_DT_blk_design                |    61|
+|3     |    blue_RnM          |vcu_DT_blk_design_xlslice_2_0    |     0|
+|4     |    green_RnM         |vcu_DT_blk_design_xlslice_1_0    |     0|
+|5     |    mode              |vcu_DT_blk_design_xlslice_0_0    |     0|
+|6     |    red_RnM           |vcu_DT_blk_design_xlslice_0_1    |     0|
+|7     |    zero              |vcu_DT_blk_design_xlconstant_0_0 |     0|
++------+----------------------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.215 ; gain = 628.531 ; free physical = 762 ; free virtual = 21232
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 91 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:55 . Memory (MB): peak = 2916.215 ; gain = 539.578 ; free physical = 788 ; free virtual = 21258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2916.223 ; gain = 628.531 ; free physical = 788 ; free virtual = 21258
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2986.746 ; gain = 0.000 ; free physical = 708 ; free virtual = 21178
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:29 . Memory (MB): peak = 2986.746 ; gain = 1586.414 ; free physical = 797 ; free virtual = 21267
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2986.746 ; gain = 0.000 ; free physical = 797 ; free virtual = 21267
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/synth_1/vcu_DT_blk_design_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vcu_DT_blk_design_wrapper_utilization_synth.rpt -pb vcu_DT_blk_design_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 29 12:17:50 2021...

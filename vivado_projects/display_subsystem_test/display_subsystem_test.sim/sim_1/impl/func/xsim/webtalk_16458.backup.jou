@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Apr  8 11:16:44 2021
+# Process ID: 16458
+# Current directory: /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.sim/sim_1/impl/func/xsim
+# Command line: wbtcv -mode batch -source /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.sim/sim_1/impl/func/xsim/xsim.dir/design_1_wrapper_func_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.sim/sim_1/impl/func/xsim/webtalk.log
+# Journal file: /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.sim/sim_1/impl/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/rwegter/vivado_projects/display_subsystem_test/display_subsystem_test.sim/sim_1/impl/func/xsim/xsim.dir/design_1_wrapper_func_impl/webtalk/xsim_webtalk.tcl -notrace

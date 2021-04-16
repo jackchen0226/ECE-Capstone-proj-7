@@ -1,0 +1,1882 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date              : Mon Mar 29 12:24:37 2021
+| Host              : WT-SP4U running 64-bit Ubuntu 20.04.2 LTS
+| Command           : report_timing_summary -max_paths 10 -file vcu_DT_blk_design_wrapper_timing_summary_routed.rpt -pb vcu_DT_blk_design_wrapper_timing_summary_routed.pb -rpx vcu_DT_blk_design_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design            : vcu_DT_blk_design_wrapper
+| Device            : xcvu9p-flga2104
+| Speed File        : -2L  PRODUCTION 1.23 03-18-2019
+| Temperature Grade : E
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 15 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There is 1 port with no output delay but with a timing clock defined on it or propagating through it (LOW)
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     22.373        0.000                      0                  634        0.017        0.000                      0                  634        3.550        0.000                       0                   291  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                                     Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                                     ------------         ----------      --------------
+sysclk_125_clk_p                          {0.000 4.000}        8.000           125.000         
+  clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {0.000 12.500}       25.000          40.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                         WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                         -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sysclk_125_clk_p                                                                                                                                                                            3.550        0.000                       0                     1  
+  clk_out1_vcu_DT_blk_design_clk_wiz_0_3       22.373        0.000                      0                  634        0.017        0.000                      0                  634       12.225        0.000                       0                   290  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sysclk_125_clk_p
+  To Clock:  sysclk_125_clk_p
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.550ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sysclk_125_clk_p
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { sysclk_125_clk_p }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location   Pin
+Min Period        n/a     MMCME4_ADV/CLKIN1  n/a            1.071         8.000       6.929      MMCM_X1Y5  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME4_ADV/CLKIN1  n/a            0.450         4.000       3.550      MMCM_X1Y5  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME4_ADV/CLKIN1  n/a            0.450         4.000       3.550      MMCM_X1Y5  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME4_ADV/CLKIN1  n/a            0.450         4.000       3.550      MMCM_X1Y5  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME4_ADV/CLKIN1  n/a            0.450         4.000       3.550      MMCM_X1Y5  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  To Clock:  clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+
+Setup :            0  Failing Endpoints,  Worst Slack       22.373ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.017ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       12.225ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             22.373ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.409ns  (logic 0.492ns (20.423%)  route 1.917ns (79.577%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.494ns = ( 28.494 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.363ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.678ns (routing 0.915ns, distribution 0.763ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.295     5.577    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678    28.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]/C
+                         clock pessimism             -0.363    28.131    
+                         clock uncertainty           -0.107    28.024    
+    SLICE_X110Y466       FDRE (Setup_EFF_SLICEM_C_R)
+                                                     -0.074    27.950    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]
+  -------------------------------------------------------------------
+                         required time                         27.950    
+                         arrival time                          -5.577    
+  -------------------------------------------------------------------
+                         slack                                 22.373    
+
+Slack (MET) :             22.373ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[14]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.409ns  (logic 0.492ns (20.423%)  route 1.917ns (79.577%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.494ns = ( 28.494 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.363ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.678ns (routing 0.915ns, distribution 0.763ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.295     5.577    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[14]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678    28.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[14]/C
+                         clock pessimism             -0.363    28.131    
+                         clock uncertainty           -0.107    28.024    
+    SLICE_X110Y466       FDRE (Setup_EFF2_SLICEM_C_R)
+                                                     -0.074    27.950    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[14]
+  -------------------------------------------------------------------
+                         required time                         27.950    
+                         arrival time                          -5.577    
+  -------------------------------------------------------------------
+                         slack                                 22.373    
+
+Slack (MET) :             22.373ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.409ns  (logic 0.492ns (20.423%)  route 1.917ns (79.577%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.494ns = ( 28.494 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.363ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.678ns (routing 0.915ns, distribution 0.763ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.295     5.577    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678    28.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]/C
+                         clock pessimism             -0.363    28.131    
+                         clock uncertainty           -0.107    28.024    
+    SLICE_X110Y466       FDRE (Setup_FFF_SLICEM_C_R)
+                                                     -0.074    27.950    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]
+  -------------------------------------------------------------------
+                         required time                         27.950    
+                         arrival time                          -5.577    
+  -------------------------------------------------------------------
+                         slack                                 22.373    
+
+Slack (MET) :             22.373ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.409ns  (logic 0.492ns (20.423%)  route 1.917ns (79.577%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.494ns = ( 28.494 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.363ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.678ns (routing 0.915ns, distribution 0.763ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.295     5.577    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678    28.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/C
+                         clock pessimism             -0.363    28.131    
+                         clock uncertainty           -0.107    28.024    
+    SLICE_X110Y466       FDRE (Setup_FFF2_SLICEM_C_R)
+                                                     -0.074    27.950    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]
+  -------------------------------------------------------------------
+                         required time                         27.950    
+                         arrival time                          -5.577    
+  -------------------------------------------------------------------
+                         slack                                 22.373    
+
+Slack (MET) :             22.373ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[22]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.409ns  (logic 0.492ns (20.423%)  route 1.917ns (79.577%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.494ns = ( 28.494 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.363ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.678ns (routing 0.915ns, distribution 0.763ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.295     5.577    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[22]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678    28.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[22]/C
+                         clock pessimism             -0.363    28.131    
+                         clock uncertainty           -0.107    28.024    
+    SLICE_X110Y466       FDRE (Setup_GFF_SLICEM_C_R)
+                                                     -0.074    27.950    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[22]
+  -------------------------------------------------------------------
+                         required time                         27.950    
+                         arrival time                          -5.577    
+  -------------------------------------------------------------------
+                         slack                                 22.373    
+
+Slack (MET) :             22.403ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[5]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.360ns  (logic 0.492ns (20.847%)  route 1.868ns (79.153%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.056ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.486ns = ( 28.486 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.373ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.670ns (routing 0.915ns, distribution 0.755ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.246     5.528    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y468       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[5]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.670    28.486    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y468       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[5]/C
+                         clock pessimism             -0.373    28.112    
+                         clock uncertainty           -0.107    28.005    
+    SLICE_X110Y468       FDRE (Setup_EFF_SLICEM_C_R)
+                                                     -0.074    27.931    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[5]
+  -------------------------------------------------------------------
+                         required time                         27.931    
+                         arrival time                          -5.528    
+  -------------------------------------------------------------------
+                         slack                                 22.403    
+
+Slack (MET) :             22.403ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[6]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.360ns  (logic 0.492ns (20.847%)  route 1.868ns (79.153%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.056ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.486ns = ( 28.486 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.373ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.670ns (routing 0.915ns, distribution 0.755ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.246     5.528    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y468       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.670    28.486    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y468       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[6]/C
+                         clock pessimism             -0.373    28.112    
+                         clock uncertainty           -0.107    28.005    
+    SLICE_X110Y468       FDRE (Setup_EFF2_SLICEM_C_R)
+                                                     -0.074    27.931    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[6]
+  -------------------------------------------------------------------
+                         required time                         27.931    
+                         arrival time                          -5.528    
+  -------------------------------------------------------------------
+                         slack                                 22.403    
+
+Slack (MET) :             22.403ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[7]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.360ns  (logic 0.492ns (20.847%)  route 1.868ns (79.153%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.056ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.486ns = ( 28.486 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.373ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.670ns (routing 0.915ns, distribution 0.755ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.246     5.528    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X110Y468       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[7]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.670    28.486    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y468       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[7]/C
+                         clock pessimism             -0.373    28.112    
+                         clock uncertainty           -0.107    28.005    
+    SLICE_X110Y468       FDRE (Setup_FFF_SLICEM_C_R)
+                                                     -0.074    27.931    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[7]
+  -------------------------------------------------------------------
+                         required time                         27.931    
+                         arrival time                          -5.528    
+  -------------------------------------------------------------------
+                         slack                                 22.403    
+
+Slack (MET) :             22.414ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[12]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.293ns  (logic 0.492ns (21.457%)  route 1.801ns (78.543%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.111ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.483ns = ( 28.483 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.667ns (routing 0.915ns, distribution 0.752ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.179     5.461    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X108Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[12]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.667    28.483    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X108Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[12]/C
+                         clock pessimism             -0.426    28.057    
+                         clock uncertainty           -0.107    27.950    
+    SLICE_X108Y467       FDRE (Setup_EFF_SLICEM_C_R)
+                                                     -0.074    27.876    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[12]
+  -------------------------------------------------------------------
+                         required time                         27.876    
+                         arrival time                          -5.461    
+  -------------------------------------------------------------------
+                         slack                                 22.414    
+
+Slack (MET) :             22.414ns  (required time - arrival time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[20]/R
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@25.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        2.293ns  (logic 0.492ns (21.457%)  route 1.801ns (78.543%))
+  Logic Levels:           4  (CARRY8=1 LUT3=1 LUT5=2)
+  Clock Path Skew:        -0.111ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.483ns = ( 28.483 - 25.000 ) 
+    Source Clock Delay      (SCD):    3.168ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Uncertainty:      0.107ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.203ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      1.904ns (routing 1.006ns, distribution 0.898ns)
+  Clock Net Delay (Destination): 1.667ns (routing 0.915ns, distribution 0.752ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X111Y466       FDRE (Prop_EFF_SLICEL_C_Q)
+                                                      0.079     3.247 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[20]/Q
+                         net (fo=9, routed)           1.183     4.430    vcu_DT_blk_design_i/vga_core_0/inst/p_0_in[12]
+    SLICE_X110Y467       LUT5 (Prop_G6LUT_SLICEM_I0_O)
+                                                      0.090     4.520 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10/O
+                         net (fo=1, routed)           0.163     4.683    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_10_n_0
+    SLICE_X109Y467       LUT3 (Prop_F6LUT_SLICEL_I2_O)
+                                                      0.123     4.806 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3/O
+                         net (fo=1, routed)           0.011     4.817    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_i_3_n_0
+    SLICE_X109Y467       CARRY8 (Prop_CARRY8_SLICEL_S[5]_CO[7])
+                                                      0.162     4.979 r  vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0/CO[7]
+                         net (fo=2, routed)           0.265     5.244    vcu_DT_blk_design_i/vga_core_0/inst/p_1_out_carry__0_n_0
+    SLICE_X108Y468       LUT5 (Prop_A6LUT_SLICEM_I2_O)
+                                                      0.038     5.282 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1/O
+                         net (fo=11, routed)          0.179     5.461    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0
+    SLICE_X108Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[20]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                     25.000    25.000 r  
+    AY24                                              0.000    25.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000    25.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575    25.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040    25.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000    25.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333    25.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630    26.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214    26.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024    26.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.667    28.483    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X108Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[20]/C
+                         clock pessimism             -0.426    28.057    
+                         clock uncertainty           -0.107    27.950    
+    SLICE_X108Y467       FDRE (Setup_EFF2_SLICEM_C_R)
+                                                     -0.074    27.876    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[20]
+  -------------------------------------------------------------------
+                         required time                         27.876    
+                         arrival time                          -5.461    
+  -------------------------------------------------------------------
+                         slack                                 22.414    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.017ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_x_dir_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.192ns  (logic 0.111ns (57.812%)  route 0.081ns (42.187%))
+  Logic Levels:           2  (CARRY8=1 LUT2=1)
+  Clock Path Skew:        0.115ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.167ns
+    Source Clock Delay      (SCD):    3.478ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.662ns (routing 0.915ns, distribution 0.747ns)
+  Clock Net Delay (Destination): 1.903ns (routing 1.006ns, distribution 0.897ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.662     3.478    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X109Y464       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_dir_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y464       FDRE (Prop_DFF2_SLICEL_C_Q)
+                                                      0.061     3.539 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_dir_reg[7]/Q
+                         net (fo=3, routed)           0.061     3.600    vcu_DT_blk_design_i/vga_core_0/inst/ball_x_dir__0[7]
+    SLICE_X111Y464       LUT2 (Prop_H6LUT_SLICEL_I0_O)
+                                                      0.023     3.623 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos[0]_i_2/O
+                         net (fo=1, routed)           0.010     3.633    vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos[0]_i_2_n_0
+    SLICE_X111Y464       CARRY8 (Prop_CARRY8_SLICEL_S[7]_O[7])
+                                                      0.027     3.660 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[0]_i_1/O[7]
+                         net (fo=1, routed)           0.010     3.670    vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[0]_i_1_n_8
+    SLICE_X111Y464       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.903     3.167    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X111Y464       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[7]/C
+                         clock pessimism              0.426     3.593    
+    SLICE_X111Y464       FDRE (Hold_HFF_SLICEL_C_D)
+                                                      0.060     3.653    vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -3.653    
+                         arrival time                           3.670    
+  -------------------------------------------------------------------
+                         slack                                  0.017    
+
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.179ns  (logic 0.079ns (44.134%)  route 0.100ns (55.866%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.099ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.167ns
+    Source Clock Delay      (SCD):    3.494ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.678ns (routing 0.915ns, distribution 0.763ns)
+  Clock Net Delay (Destination): 1.903ns (routing 1.006ns, distribution 0.897ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678     3.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y466       FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.057     3.551 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[15]/Q
+                         net (fo=1, routed)           0.065     3.616    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[15]
+    SLICE_X108Y466       LUT5 (Prop_F6LUT_SLICEM_I1_O)
+                                                      0.022     3.638 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb[15]_i_1/O
+                         net (fo=1, routed)           0.035     3.673    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb[15]_i_1_n_0
+    SLICE_X108Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.903     3.167    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X108Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[15]/C
+                         clock pessimism              0.426     3.593    
+    SLICE_X108Y466       FDRE (Hold_FFF_SLICEM_C_D)
+                                                      0.060     3.653    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -3.653    
+                         arrival time                           3.673    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.021ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[21]/D
+                            (rising edge-triggered cell FDSE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.179ns  (logic 0.082ns (45.810%)  route 0.097ns (54.190%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.098ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.166ns
+    Source Clock Delay      (SCD):    3.494ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.678ns (routing 0.915ns, distribution 0.763ns)
+  Clock Net Delay (Destination): 1.902ns (routing 1.006ns, distribution 0.896ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678     3.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y466       FDRE (Prop_FFF2_SLICEM_C_Q)
+                                                      0.060     3.554 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/Q
+                         net (fo=1, routed)           0.067     3.621    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[21]
+    SLICE_X108Y465       LUT5 (Prop_G6LUT_SLICEM_I3_O)
+                                                      0.022     3.643 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb[21]_i_1/O
+                         net (fo=1, routed)           0.030     3.673    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb[21]_i_1_n_0
+    SLICE_X108Y465       FDSE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.902     3.166    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X108Y465       FDSE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[21]/C
+                         clock pessimism              0.426     3.592    
+    SLICE_X108Y465       FDSE (Hold_GFF_SLICEM_C_D)
+                                                      0.060     3.652    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[21]
+  -------------------------------------------------------------------
+                         required time                         -3.652    
+                         arrival time                           3.673    
+  -------------------------------------------------------------------
+                         slack                                  0.021    
+
+Slack (MET) :             0.026ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[13]/D
+                            (rising edge-triggered cell FDSE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.185ns  (logic 0.081ns (43.784%)  route 0.104ns (56.216%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.099ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.167ns
+    Source Clock Delay      (SCD):    3.494ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.678ns (routing 0.915ns, distribution 0.763ns)
+  Clock Net Delay (Destination): 1.903ns (routing 1.006ns, distribution 0.897ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.678     3.494    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y466       FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.058     3.552 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[13]/Q
+                         net (fo=1, routed)           0.074     3.626    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[13]
+    SLICE_X108Y466       LUT5 (Prop_H6LUT_SLICEM_I3_O)
+                                                      0.023     3.649 r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb[13]_i_1/O
+                         net (fo=1, routed)           0.030     3.679    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb[13]_i_1_n_0
+    SLICE_X108Y466       FDSE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.903     3.167    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X108Y466       FDSE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[13]/C
+                         clock pessimism              0.426     3.593    
+    SLICE_X108Y466       FDSE (Hold_HFF_SLICEM_C_D)
+                                                      0.060     3.653    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -3.653    
+                         arrival time                           3.679    
+  -------------------------------------------------------------------
+                         slack                                  0.026    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.177ns  (logic 0.090ns (50.847%)  route 0.087ns (49.153%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.085ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.135ns
+    Source Clock Delay      (SCD):    3.476ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.660ns (routing 0.915ns, distribution 0.745ns)
+  Clock Net Delay (Destination): 1.871ns (routing 1.006ns, distribution 0.865ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.660     3.476    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X107Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X107Y467       FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.058     3.534 r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[1]/Q
+                         net (fo=13, routed)          0.077     3.611    vcu_DT_blk_design_i/vga_core_0/inst/data3[10]
+    SLICE_X106Y467       LUT5 (Prop_B5LUT_SLICEL_I3_O)
+                                                      0.032     3.643 r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x[3]_i_1/O
+                         net (fo=1, routed)           0.010     3.653    vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x[3]
+    SLICE_X106Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.871     3.135    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X106Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[3]/C
+                         clock pessimism              0.426     3.561    
+    SLICE_X106Y467       FDRE (Hold_BFF2_SLICEL_C_D)
+                                                      0.062     3.623    vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[3]
+  -------------------------------------------------------------------
+                         required time                         -3.623    
+                         arrival time                           3.653    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+Slack (MET) :             0.036ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.196ns  (logic 0.081ns (41.327%)  route 0.115ns (58.674%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.100ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.135ns
+    Source Clock Delay      (SCD):    3.461ns
+    Clock Pessimism Removal (CPR):    -0.425ns
+  Clock Net Delay (Source):      1.645ns (routing 0.915ns, distribution 0.730ns)
+  Clock Net Delay (Destination): 1.871ns (routing 1.006ns, distribution 0.865ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.645     3.461    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X105Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X105Y467       FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.059     3.520 r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[12]/Q
+                         net (fo=11, routed)          0.093     3.613    vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg_n_0_[12]
+    SLICE_X106Y467       LUT6 (Prop_D6LUT_SLICEL_I4_O)
+                                                      0.022     3.635 r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x[14]_i_1/O
+                         net (fo=1, routed)           0.022     3.657    vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x[14]
+    SLICE_X106Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.871     3.135    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X106Y467       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[14]/C
+                         clock pessimism              0.425     3.561    
+    SLICE_X106Y467       FDRE (Hold_DFF_SLICEL_C_D)
+                                                      0.060     3.621    vcu_DT_blk_design_i/vga_core_0/inst/u0_pel_x_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -3.621    
+                         arrival time                           3.657    
+  -------------------------------------------------------------------
+                         slack                                  0.036    
+
+Slack (MET) :             0.037ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_line_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.095ns  (logic 0.039ns (41.053%)  route 0.056ns (58.947%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.793ns
+    Source Clock Delay      (SCD):    2.021ns
+    Clock Pessimism Removal (CPR):    -0.239ns
+  Clock Net Delay (Source):      1.042ns (routing 0.550ns, distribution 0.492ns)
+  Clock Net Delay (Destination): 1.176ns (routing 0.613ns, distribution 0.563ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.351     0.351 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.391    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.391 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.196     0.587    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.230     0.817 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.145     0.962    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.017     0.979 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.042     2.021    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X108Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X108Y466       FDRE (Prop_HFF2_SLICEM_C_Q)
+                                                      0.039     2.060 r  vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[15]/Q
+                         net (fo=1, routed)           0.056     2.116    vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg_n_0_[15]
+    SLICE_X109Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_line_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.456     0.456 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.506    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.506 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.222     0.728    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.295     0.433 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.165     0.598    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.019     0.617 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.176     1.793    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X109Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_line_reg[15]/C
+                         clock pessimism              0.239     2.032    
+    SLICE_X109Y466       FDRE (Hold_AFF2_SLICEL_C_D)
+                                                      0.047     2.079    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_line_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -2.079    
+                         arrival time                           2.116    
+  -------------------------------------------------------------------
+                         slack                                  0.037    
+
+Slack (MET) :             0.040ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.207ns  (logic 0.058ns (28.019%)  route 0.149ns (71.981%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.105ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.161ns
+    Source Clock Delay      (SCD):    3.482ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.666ns (routing 0.915ns, distribution 0.751ns)
+  Clock Net Delay (Destination): 1.897ns (routing 1.006ns, distribution 0.891ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.666     3.482    vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/CLK
+    SLICE_X110Y462       FDRE                                         r  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y462       FDRE (Prop_GFF_SLICEM_C_Q)
+                                                      0.058     3.540 r  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[15]/Q
+                         net (fo=4, routed)           0.149     3.689    vcu_DT_blk_design_i/vga_core_0/inst/random_num[14]
+    SLICE_X109Y465       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.897     3.161    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X109Y465       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[14]/C
+                         clock pessimism              0.426     3.587    
+    SLICE_X109Y465       FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.062     3.649    vcu_DT_blk_design_i/vga_core_0/inst/line_rgb_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -3.649    
+                         arrival time                           3.689    
+  -------------------------------------------------------------------
+                         slack                                  0.040    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[21]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.206ns  (logic 0.060ns (29.126%)  route 0.146ns (70.874%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.103ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.168ns
+    Source Clock Delay      (SCD):    3.491ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Net Delay (Source):      1.675ns (routing 0.915ns, distribution 0.760ns)
+  Clock Net Delay (Destination): 1.904ns (routing 1.006ns, distribution 0.898ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.575     0.575 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.615    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.615 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.333     0.948    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.630     1.578 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.214     1.792    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.024     1.816 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.675     3.491    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X109Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[21]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X109Y466       FDRE (Prop_FFF2_SLICEL_C_Q)
+                                                      0.060     3.551 r  vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[21]/Q
+                         net (fo=1, routed)           0.146     3.697    vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb__0[21]
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.685     0.685 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.735    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.735 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.384     1.119    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.127     0.992 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.244     1.236    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.028     1.264 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.904     3.168    vcu_DT_blk_design_i/vga_core_0/inst/clk_dot
+    SLICE_X110Y466       FDRE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]/C
+                         clock pessimism              0.426     3.594    
+    SLICE_X110Y466       FDRE (Hold_FFF2_SLICEM_C_D)
+                                                      0.062     3.656    vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball_reg[21]
+  -------------------------------------------------------------------
+                         required time                         -3.656    
+                         arrival time                           3.697    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.042ns  (arrival time - required time)
+  Source:                 vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vsync_loc_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Destination:            vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vga_vsync_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_vcu_DT_blk_design_clk_wiz_0_3  {rise@0.000ns fall@12.500ns period=25.000ns})
+  Path Group:             clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns - clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise@0.000ns)
+  Data Path Delay:        0.101ns  (logic 0.038ns (37.624%)  route 0.063ns (62.376%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.012ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.821ns
+    Source Clock Delay      (SCD):    2.045ns
+    Clock Pessimism Removal (CPR):    -0.236ns
+  Clock Net Delay (Source):      1.066ns (routing 0.550ns, distribution 0.516ns)
+  Clock Net Delay (Destination): 1.204ns (routing 0.613ns, distribution 0.591ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.351     0.351 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.040     0.391    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.391 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.196     0.587    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.230     0.817 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.145     0.962    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.017     0.979 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.066     2.045    vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/clk_dot
+    SLICE_X110Y493       FDCE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vsync_loc_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X110Y493       FDCE (Prop_CFF_SLICEM_C_Q)
+                                                      0.038     2.083 r  vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vsync_loc_reg/Q
+                         net (fo=1, routed)           0.063     2.146    vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vsync_loc
+    SLICE_X110Y493       FDCE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vga_vsync_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_vcu_DT_blk_design_clk_wiz_0_3 rise edge)
+                                                      0.000     0.000 r  
+    AY24                                              0.000     0.000 r  sysclk_125_clk_p (IN)
+                         net (fo=0)                   0.000     0.000    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/I
+    HPIOBDIFFINBUF_X1Y130
+                         DIFFINBUF (Prop_DIFFINBUF_HPIOBDIFFINBUF_DIFF_IN_P_O)
+                                                      0.456     0.456 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/DIFFINBUF_INST/O
+                         net (fo=1, routed)           0.050     0.506    vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/OUT
+    AY24                 IBUFCTRL (Prop_IBUFCTRL_HPIOB_M_I_O)
+                                                      0.000     0.506 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkin1_ibufds/IBUFCTRL_INST/O
+                         net (fo=1, routed)           0.222     0.728    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_in1_vcu_DT_blk_design_clk_wiz_0_3
+    MMCM_X1Y5            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.295     0.433 r  vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.165     0.598    vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+    BUFGCE_X1Y122        BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.019     0.617 r  vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/O
+    X3Y7 (CLOCK_ROOT)    net (fo=289, routed)         1.204     1.821    vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/clk_dot
+    SLICE_X110Y493       FDCE                                         r  vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vga_vsync_reg/C
+                         clock pessimism              0.236     2.057    
+    SLICE_X110Y493       FDCE (Hold_HFF2_SLICEM_C_D)
+                                                      0.047     2.104    vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vga_vsync_reg
+  -------------------------------------------------------------------
+                         required time                         -2.104    
+                         arrival time                           2.146    
+  -------------------------------------------------------------------
+                         slack                                  0.042    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_vcu_DT_blk_design_clk_wiz_0_3
+Waveform(ns):       { 0.000 12.500 }
+Period(ns):         25.000
+Sources:            { vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFGCE/I            n/a            1.290         25.000      23.710     BUFGCE_X1Y122   vcu_DT_blk_design_i/clk_wiz_0/inst/clkout1_buf/I
+Min Period        n/a     MMCME4_ADV/CLKOUT0  n/a            1.071         25.000      23.929     MMCM_X1Y5       vcu_DT_blk_design_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[10]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[11]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[13]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[14]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[15]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[16]/C
+Min Period        n/a     FDRE/C              n/a            0.550         25.000      24.450     SLICE_X110Y463  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[17]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X109Y465  vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[14]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X109Y465  vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[14]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X109Y465  vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[22]/C
+Low Pulse Width   Fast    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X109Y465  vcu_DT_blk_design_i/vga_core_0/inst/ball_rgb_reg[22]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X111Y464  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X111Y464  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[2]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X111Y465  vcu_DT_blk_design_i/vga_core_0/inst/ball_x_pos_reg[9]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X111Y470  vcu_DT_blk_design_i/vga_core_0/inst/ball_y_pos_reg[4]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X111Y470  vcu_DT_blk_design_i/vga_core_0/inst/ball_y_pos_reg[5]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X111Y470  vcu_DT_blk_design_i/vga_core_0/inst/ball_y_pos_reg[6]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[10]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[11]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[12]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[13]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[13]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[14]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[14]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[15]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[15]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.275         12.500      12.225     SLICE_X110Y462  vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[16]/C
+
+
+

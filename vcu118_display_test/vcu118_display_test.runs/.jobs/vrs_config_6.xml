@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="vcu_DT_blk_design_vga_core_0_0_synth_1" LaunchDir="/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_vga_core_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="vcu_DT_blk_design_clk_wiz_0_synth_1" LaunchDir="/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_c_counter_binary_0_0/sim/vcu_DT_blk_design_c_counter_binary_0_0.vhd" \
+
+nosort

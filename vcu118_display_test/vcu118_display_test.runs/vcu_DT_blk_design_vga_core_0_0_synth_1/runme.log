@@ -1,0 +1,365 @@
+
+*** Running vivado
+    with args -log vcu_DT_blk_design_vga_core_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vcu_DT_blk_design_vga_core_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source vcu_DT_blk_design_vga_core_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/rwegter/ip_repo/vcu118_display_test_v1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/rwegter/ip_repo/vcu118_display_test'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'user.org:user:VCU118_Display_Test:1.0'. The one found in IP location '/home/rwegter/ip_repo/vcu118_display_test_v1' will take precedence over the same IP in location /home/rwegter/ip_repo/vcu118_display_test
+Command: synth_design -top vcu_DT_blk_design_vga_core_0_0 -part xcvu9p-flga2104-2L-e -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'vcu_DT_blk_design_vga_core_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu9p'
+INFO: [Common 17-86] Your Synthesis license expires in 3 day(s)
+INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 66942 
+WARNING: [Synth 8-2292] literal value truncated to fit in 8 bits [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:151]
+WARNING: [Synth 8-2292] literal value truncated to fit in 8 bits [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:152]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2385.047 ; gain = 100.688 ; free physical = 148 ; free virtual = 15654
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vcu_DT_blk_design_vga_core_0_0' [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_vga_core_0_0/synth/vcu_DT_blk_design_vga_core_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'vga_core' [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:25]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [/home/rwegter/icebreaker-examples/dvi-12bit/vga_timing.v:105]
+WARNING: [Synth 8-6014] Unused sequential element vsync_loc_p1_reg was removed.  [/home/rwegter/icebreaker-examples/dvi-12bit/vga_timing.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (1#1) [/home/rwegter/icebreaker-examples/dvi-12bit/vga_timing.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'vga_core' (2#1) [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'vcu_DT_blk_design_vga_core_0_0' (3#1) [/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.srcs/sources_1/bd/vcu_DT_blk_design/ip/vcu_DT_blk_design_vga_core_0_0/synth/vcu_DT_blk_design_vga_core_0_0.v:58]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[31]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[30]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[29]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[28]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[27]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[26]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[25]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2415.953 ; gain = 131.594 ; free physical = 259 ; free virtual = 15756
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2438.766 ; gain = 154.406 ; free physical = 233 ; free virtual = 15731
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2438.766 ; gain = 154.406 ; free physical = 233 ; free virtual = 15731
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2573.531 ; gain = 0.000 ; free physical = 130 ; free virtual = 15620
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2597.344 ; gain = 23.812 ; free physical = 126 ; free virtual = 15603
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2597.344 ; gain = 312.984 ; free physical = 283 ; free virtual = 15766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu9p-flga2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2597.344 ; gain = 312.984 ; free physical = 283 ; free virtual = 15766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2597.344 ; gain = 312.984 ; free physical = 283 ; free virtual = 15766
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'ball_rgb_reg' and it is trimmed from '24' to '23' bits. [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:153]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ball_y_dir_reg' and it is trimmed from '16' to '12' bits. [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:155]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ball_x_dir_reg' and it is trimmed from '16' to '12' bits. [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:154]
+WARNING: [Synth 8-3936] Found unconnected internal register 'line_rgb_reg' and it is trimmed from '24' to '23' bits. [/home/rwegter/icebreaker-examples/dvi-12bit/vga_core.v:122]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 2597.344 ; gain = 312.984 ; free physical = 254 ; free virtual = 15740
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 14    
++---Registers : 
+	               24 Bit    Registers := 4     
+	               23 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 7     
+	   5 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 19    
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_timing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+Module vga_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     17 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 12    
++---Registers : 
+	               24 Bit    Registers := 4     
+	               23 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 6840 (col length:120)
+BRAMs: 4320 (col length: RAMB18 360 RAMB36 180)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[31]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[30]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[29]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[28]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[27]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[26]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[25]
+WARNING: [Synth 8-3331] design vga_core has unconnected port random_num[24]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/vga_rgb_tp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/vga_rgb_tp_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/vga_rgb_tp_reg[16] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2597.344 ; gain = 312.984 ; free physical = 209 ; free virtual = 15726
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:08 . Memory (MB): peak = 2900.641 ; gain = 616.281 ; free physical = 130 ; free virtual = 14999
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:08 . Memory (MB): peak = 2901.641 ; gain = 617.281 ; free physical = 134 ; free virtual = 15002
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:08 . Memory (MB): peak = 2928.672 ; gain = 644.312 ; free physical = 149 ; free virtual = 15013
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 150 ; free virtual = 15016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 150 ; free virtual = 15016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 157 ; free virtual = 15022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 157 ; free virtual = 15022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 157 ; free virtual = 15022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 157 ; free virtual = 15022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    16|
+|2     |LUT1   |    35|
+|3     |LUT2   |    78|
+|4     |LUT3   |    67|
+|5     |LUT4   |    75|
+|6     |LUT5   |    68|
+|7     |LUT6   |   141|
+|8     |FDCE   |    39|
+|9     |FDPE   |     5|
+|10    |FDRE   |   251|
+|11    |FDSE   |    30|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+-----------+------+
+|      |Instance          |Module     |Cells |
++------+------------------+-----------+------+
+|1     |top               |           |   805|
+|2     |  inst            |vga_core   |   805|
+|3     |    u0_vga_timing |vga_timing |   126|
++------+------------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.641 ; gain = 647.281 ; free physical = 157 ; free virtual = 15022
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:05 . Memory (MB): peak = 2931.641 ; gain = 488.703 ; free physical = 185 ; free virtual = 15052
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:10 . Memory (MB): peak = 2931.648 ; gain = 647.281 ; free physical = 186 ; free virtual = 15052
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2996.867 ; gain = 0.000 ; free physical = 172 ; free virtual = 15004
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:39 . Memory (MB): peak = 2996.867 ; gain = 1597.746 ; free physical = 263 ; free virtual = 15101
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2996.867 ; gain = 0.000 ; free physical = 263 ; free virtual = 15101
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_vga_core_0_0_synth_1/vcu_DT_blk_design_vga_core_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3020.879 ; gain = 0.000 ; free physical = 256 ; free virtual = 15099
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_vga_core_0_0_synth_1/vcu_DT_blk_design_vga_core_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vcu_DT_blk_design_vga_core_0_0_utilization_synth.rpt -pb vcu_DT_blk_design_vga_core_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 27 14:48:40 2021...

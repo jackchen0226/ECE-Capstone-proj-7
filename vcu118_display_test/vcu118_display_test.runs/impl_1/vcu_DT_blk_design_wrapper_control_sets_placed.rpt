@@ -1,0 +1,98 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Mar 29 12:20:53 2021
+| Host         : WT-SP4U running 64-bit Ubuntu 20.04.2 LTS
+| Command      : report_control_sets -verbose -file vcu_DT_blk_design_wrapper_control_sets_placed.rpt
+| Design       : vcu_DT_blk_design_wrapper
+| Device       : xcvu9p
+------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    20 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              49 |           12 |
+| No           | No                    | Yes                    |              23 |           10 |
+| No           | Yes                   | No                     |              16 |            4 |
+| Yes          | No                    | No                     |              49 |           13 |
+| Yes          | No                    | Yes                    |              21 |            6 |
+| Yes          | Yes                   | No                     |             130 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                                                                           Enable Signal                                                                          |                                                                         Set/Reset Signal                                                                         | Slice Load Count | Bel Load Count |
++----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/fsm_v[1]_i_1_n_0                                                                                               | reset_IBUF_inst/O                                                                                                                                                |                2 |              2 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/fsm_h[1]_i_1_n_0                                                                                               | reset_IBUF_inst/O                                                                                                                                                |                1 |              2 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q[30] |                                                                                                                                                                  |                1 |              2 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_frame_reg_2                                                                                            |                                                                                                                                                                  |                1 |              3 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/p_1_in                                                                                                                       | vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_tp[15]_i_1_n_0                                                                                                       |                1 |              4 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/p_1_in                                                                                                                       | vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_tp[7]_i_1_n_0                                                                                                        |                1 |              4 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/p_1_in                                                                                                                       | vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_tp[23]_i_1_n_0                                                                                                       |                1 |              4 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q[30] | vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_ball[22]_i_1_n_0                                                                                                     |                3 |             11 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_frame_reg_3[0]                                                                                         |                                                                                                                                                                  |                3 |             11 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/E[0]                                                                                                           |                                                                                                                                                                  |                3 |             11 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q[30] | vcu_DT_blk_design_i/vga_core_0/inst/vga_rgb_line[22]_i_1_n_0                                                                                                     |                3 |             11 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/SR[0]                                                                                                          |                                                                                                                                                                  |                4 |             11 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/dir_chg_sr_reg[0][0]                                                                                           |                                                                                                                                                                  |                5 |             11 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_line                                                                                                   | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_frame                                                                                                  |                4 |             16 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 |                                                                                                                                                                  | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_line                                                                                                   |                4 |             16 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/h_rollover                                                                                                     | reset_IBUF_inst/O                                                                                                                                                |                5 |             17 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 |                                                                                                                                                                  | reset_IBUF_inst/O                                                                                                                                                |               10 |             23 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_frame                                                                                                  | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/SR[0]                                                                                                          |                6 |             32 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 | vcu_DT_blk_design_i/vga_core_0/inst/u0_vga_timing/vid_new_frame                                                                                                  | vcu_DT_blk_design_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/Q[30] |                6 |             48 |
+|  vcu_DT_blk_design_i/clk_wiz_0/inst/clk_out1 |                                                                                                                                                                  |                                                                                                                                                                  |               12 |             49 |
++----------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

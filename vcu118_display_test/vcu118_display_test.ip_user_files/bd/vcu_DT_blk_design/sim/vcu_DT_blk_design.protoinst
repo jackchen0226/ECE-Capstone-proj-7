@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"vcu_DT_blk_design": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Mar 29 12:14:17 2021
+# Process ID: 5309
+# Current directory: /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_clk_wiz_0_3_synth_1
+# Command line: vivado -log vcu_DT_blk_design_clk_wiz_0_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vcu_DT_blk_design_clk_wiz_0_3.tcl
+# Log file: /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_clk_wiz_0_3_synth_1/vcu_DT_blk_design_clk_wiz_0_3.vds
+# Journal file: /home/rwegter/xil_logs/vcu118_display_test/vcu118_display_test.runs/vcu_DT_blk_design_clk_wiz_0_3_synth_1/vivado.jou
+#-----------------------------------------------------------
+source vcu_DT_blk_design_clk_wiz_0_3.tcl -notrace
