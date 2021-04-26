@@ -35,3 +35,5 @@ apt-get install libsdl2-dev //To use virtual screen to display framebuffer.
 --| Notes |--
 SDL2 is incompatible with ncurses. If you want user input without SDL2 (will likely be necessary
 for VCU118), don't use SDL2_Screen API or link SDL2 when compiling.
+
+tetris.c is terrible code made quickly for fun.
