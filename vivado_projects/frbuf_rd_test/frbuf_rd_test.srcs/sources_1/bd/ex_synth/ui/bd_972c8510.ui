@@ -1,0 +1,92 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port ddr3_sdram -pg 1 -lvl 5 -x 1750 -y 740 -defaultsOSRD
+preplace port usb_uart -pg 1 -lvl 5 -x 1750 -y 520 -defaultsOSRD
+preplace port qspi_flash -pg 1 -lvl 5 -x 1750 -y 980 -defaultsOSRD
+preplace port eth_mii -pg 1 -lvl 5 -x 1750 -y 1120 -defaultsOSRD
+preplace port eth_mdio_mdc -pg 1 -lvl 5 -x 1750 -y 1140 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 720 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 1070 -defaultsOSRD
+preplace port vid_hsync_0 -pg 1 -lvl 5 -x 1750 -y 1360 -defaultsOSRD
+preplace port vid_vsync_0 -pg 1 -lvl 5 -x 1750 -y 1380 -defaultsOSRD
+preplace port vid_active_video_0 -pg 1 -lvl 5 -x 1750 -y 1320 -defaultsOSRD
+preplace port clk -pg 1 -lvl 5 -x 1750 -y 1230 -defaultsOSRD
+preplace portBus Red -pg 1 -lvl 5 -x 1750 -y 160 -defaultsOSRD
+preplace portBus Blue -pg 1 -lvl 5 -x 1750 -y 60 -defaultsOSRD
+preplace portBus Green -pg 1 -lvl 5 -x 1750 -y 260 -defaultsOSRD
+preplace inst memory_ss -pg 1 -lvl 4 -x 1540 -y 750 -defaultsOSRD
+preplace inst clock_and_reset -pg 1 -lvl 1 -x 220 -y 860 -defaultsOSRD
+preplace inst processor_ss -pg 1 -lvl 2 -x 630 -y 780 -defaultsOSRD
+preplace inst hls_ip_reset -pg 1 -lvl 3 -x 1090 -y 430 -defaultsOSRD
+preplace inst v_frmbuf_rd_0 -pg 1 -lvl 3 -x 1090 -y 590 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 3 -x 1090 -y 1360 -defaultsOSRD
+preplace inst vid_out -pg 1 -lvl 4 -x 1540 -y 1400 -defaultsOSRD
+preplace inst video_lock_monitor -pg 1 -lvl 3 -x 1090 -y 1140 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 630 -y 1060 -defaultsOSRD
+preplace inst red_0 -pg 1 -lvl 4 -x 1540 -y 160 -defaultsOSRD
+preplace inst green_1 -pg 1 -lvl 4 -x 1540 -y 260 -defaultsOSRD
+preplace inst blue_2 -pg 1 -lvl 4 -x 1540 -y 60 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 4 -x 1540 -y 530 -defaultsOSRD
+preplace inst axi_quad_spi_0 -pg 1 -lvl 4 -x 1540 -y 990 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 1 -x 220 -y 240 -defaultsOSRD
+preplace inst axi_ethernetlite_0 -pg 1 -lvl 4 -x 1540 -y 1140 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 3 -x 1090 -y 810 -defaultsOSRD
+preplace netloc processor_Clk 1 1 3 400 590 780 320 1350J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 1 1 430 720n
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 1 1 440 860n
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 1 3 450 950 900 950 1370
+preplace netloc mdm_1_debug_sys_rst 1 0 3 40 980 NJ 980 770
+preplace netloc mig_ui_clk 1 0 5 20 1140 NJ 1140 810J 1060 1360 900 1710
+preplace netloc hls_ip_reset_gpio_io_o 1 2 2 870 330 1320
+preplace netloc vid_out_locked 1 3 2 1280 1220 1710
+preplace netloc vid_out_vtg_ce 1 2 3 910 1560 NJ 1560 1700
+preplace netloc clk_wiz_1_clk_out2 1 1 4 460 960 820 1220 1270 1230 NJ
+preplace netloc clk_wiz_1_clk_out3 1 1 3 480 940 790 350 1310
+preplace netloc rst_clk_wiz_1_150M_peripheral_aresetn 1 1 2 470 970 830
+preplace netloc rst_clk_wiz_1_200M_peripheral_aresetn 1 1 3 410 600 860 680 1380
+preplace netloc reset_1 1 0 4 30 720 420 610 850J 700 1330J
+preplace netloc clk_wiz_0_clk_out1 1 2 2 890 920 1340J
+preplace netloc clk_wiz_0_clk_out2 1 2 2 800J 940 1350
+preplace netloc sys_clock_1 1 0 2 NJ 1070 NJ
+preplace netloc vid_out_vid_hsync 1 4 1 NJ 1360
+preplace netloc vid_out_vid_vsync 1 4 1 NJ 1380
+preplace netloc vid_out_vid_active_video 1 4 1 NJ 1320
+preplace netloc vid_out_vid_data 1 3 2 1380 340 1720
+preplace netloc xlslice_0_Dout 1 4 1 NJ 160
+preplace netloc xlslice_2_Dout 1 4 1 NJ 60
+preplace netloc xlslice_1_Dout 1 4 1 NJ 260
+preplace netloc v_frmbuf_rd_0_interrupt 1 0 4 20 340 NJ 340 NJ 340 1280
+preplace netloc axi_quad_spi_0_ip2intc_irpt 1 0 5 30 320 400J 300 NJ 300 1370J 320 1730
+preplace netloc axi_uartlite_0_interrupt 1 0 5 40 330 NJ 330 770J 310 1360J 330 1710
+preplace netloc xlconcat_0_dout 1 1 1 440 240n
+preplace netloc processor_ss_M07_AXI 1 2 2 880 960 NJ
+preplace netloc axi_uartlite_0_UART 1 4 1 NJ 520
+preplace netloc mig_DDR3 1 4 1 NJ 740
+preplace netloc processor_ss_M06_AXI 1 2 2 800J 510 N
+preplace netloc processor_M_AXI_DC 1 2 2 NJ 670 N
+preplace netloc processor_M_AXI_IC 1 2 2 NJ 690 N
+preplace netloc v_frmbuf_rd_0_m_axis_video 1 3 1 1290 590n
+preplace netloc processor_axi_periph_M02_AXI 1 2 1 850 730n
+preplace netloc processor_axi_periph_M04_AXI 1 2 1 770 410n
+preplace netloc v_tc_0_vtiming_out 1 3 1 N 1340
+preplace netloc processor_axi_periph_M03_AXI 1 2 1 860 750n
+preplace netloc v_frmbuf_rd_0_m_axi_mm_video 1 3 1 1340 570n
+preplace netloc processor_axi_periph_M05_AXI 1 2 1 840 570n
+preplace netloc processor_ss_M08_AXI 1 2 2 840 1050 1300J
+preplace netloc axi_quad_spi_0_SPI_0 1 4 1 NJ 980
+preplace netloc axi_ethernetlite_0_MII 1 4 1 NJ 1120
+preplace netloc processor_ss_M09_AXI 1 2 1 870 760n
+preplace netloc axi_ethernetlite_0_MDIO 1 4 1 NJ 1140
+levelinfo -pg 1 0 220 630 1090 1540 1750
+pagesize -pg 1 -db -bbox -sgen -120 0 1940 1570
+"
+}
+{
+   "da_axi4_cnt":"11",
+   "da_board_cnt":"6",
+   "da_clkrst_cnt":"1",
+   "da_mb_cnt":"1",
+   "da_mig7_cnt":"1"
+}

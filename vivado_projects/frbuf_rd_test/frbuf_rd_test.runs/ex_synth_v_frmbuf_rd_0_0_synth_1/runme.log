@@ -1,0 +1,378 @@
+
+*** Running vivado
+    with args -log ex_synth_v_frmbuf_rd_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ex_synth_v_frmbuf_rd_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ex_synth_v_frmbuf_rd_0_0.tcl -notrace
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /opt/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'rwegter' on host 'WT-SP4U' (Linux_x86_64 version 5.11.13-surface) on Mon Apr 26 13:27:02 PDT 2021
+INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
+INFO: [HLS 200-10] In directory '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.runs/ex_synth_v_frmbuf_rd_0_0_synth_1'
+Sourcing Tcl script '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.runs/ex_synth_v_frmbuf_rd_0_0_synth_1/runhls.tcl'
+INFO: [HLS 200-10] Creating and opening project '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.runs/ex_synth_v_frmbuf_rd_0_0_synth_1/ex_synth_v_frmbuf_rd_0_0'.
+INFO: [HLS 200-10] Adding design file '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd_config.h' to the project
+INFO: [HLS 200-10] Adding design file '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp' to the project
+INFO: [HLS 200-10] Adding design file '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.h' to the project
+INFO: [HLS 200-10] Creating and opening solution '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.runs/ex_synth_v_frmbuf_rd_0_0_synth_1/ex_synth_v_frmbuf_rd_0_0/prj'.
+INFO: [HLS 200-10] Setting target device to 'xc7a35ti-csg324-1L'
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 12ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 809.875 ; gain = 128.000 ; free physical = 2037 ; free virtual = 16960
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 809.875 ; gain = 128.000 ; free physical = 2037 ; free virtual = 16960
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 873.875 ; gain = 192.000 ; free physical = 1983 ; free virtual = 16910
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:248: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 873.875 ; gain = 192.000 ; free physical = 1944 ; free virtual = 16872
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:221) in function 'MultiPixStream2AXIvideo' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:435) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-2.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:631) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:668) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-4.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:708) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-5.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:860) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-6.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:906) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-7.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:980) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-8.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1216) in function 'Bytes2MultiPixStream' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (/opt/Xilinx/Vivado/2019.1/common/technology/autopilot/hls/hls_video_core.h:180) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:242) in function 'MultiPixStream2AXIvideo' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:244) in function 'MultiPixStream2AXIvideo' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:446) in function 'Bytes2MultiPixStream' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:448) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:638) in function 'Bytes2MultiPixStream' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:640) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:675) in function 'Bytes2MultiPixStream' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:677) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:720) in function 'Bytes2MultiPixStream' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-4.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:722) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:872) in function 'Bytes2MultiPixStream' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:874) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:912) in function 'Bytes2MultiPixStream' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:914) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:987) in function 'Bytes2MultiPixStream' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:989) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1222) in function 'Bytes2MultiPixStream' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-8.1.1.1' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1224) in function 'Bytes2MultiPixStream' completely with a factor of 1.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img.V.val.V' .
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:165) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'map.V' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:211) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'tmp.val.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:432) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.7' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:628) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:665) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.9' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:705) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.10' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:857) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.11' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:903) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.12' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:977) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val.V.13' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1213) in dimension 1 completely.
+INFO: [XFORM 203-712] Applying dataflow to function 'v_frmbuf_rd' , detected/extracted 5 process function(s): 
+	 'Block__proc'
+	 'AXIMMvideo2Bytes'
+	 'Bytes2MultiPixStream'
+	 'Block__proc68'
+	 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_Y_UV8_Y_UV8_420' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:430:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_Y_UV8_Y_UV8_420' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:430:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_YUYV8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:626:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_YUYV8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:626:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_UYVY8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:663:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_UYVY8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:663:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_RGB8_YUV8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:702:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_RGB8_YUV8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:702:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_BGR8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:854:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_BGR8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:854:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_RGBX8_YUVX8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:901:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_RGBX8_YUVX8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:901:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_Y8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:975:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_Y8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:975:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_BGRX8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1211:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_BGRX8' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:1211:5) in function 'Bytes2MultiPixStream'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 4320 to 1023 for loop 'loop_AXIMMvideo2Bytes_2planes' in function 'AXIMMvideo2Bytes'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1023) < AVE (= 2160)) for loop 'loop_AXIMMvideo2Bytes_2planes' in function 'AXIMMvideo2Bytes'.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 973.777 ; gain = 291.902 ; free physical = 1873 ; free virtual = 16803
+WARNING: [XFORM 203-631] Renaming function 'MultiPixStream2AXIvideo' to 'MultiPixStream2AXIvi' (/home/rwegter/vivado_projects/v_frmbuf_rd_2_ex/v_frmbuf_rd_2_ex.srcs/sources_1/bd/ex_synth/ip/ex_synth_v_frmbuf_rd_0_0/src/v_frmbuf_rd.cpp:139:53)
+INFO: [HLS 200-444] Inferring multiple bus burst read of variable length on port 'srcImg.V' with 2 times. These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1037.777 ; gain = 355.902 ; free physical = 1812 ; free virtual = 16744
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_frmbuf_rd' ...
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc5' to 'Block_proc5'.
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc68' to 'Block_proc68'.
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 29.07 seconds; current allocated memory: 303.515 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 303.725 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIMMvideo2Bytes' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_AXIMMvideo2Bytes_2planes.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'loop_AXIMMvideo2Bytes_2planes.2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 304.581 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.71 seconds; current allocated memory: 305.908 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Bytes2MultiPixStream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_BGRX8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'loop_Y8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 8, Final II = 8, Depth = 9.
+INFO: [SCHED 204-61] Pipelining loop 'loop_RGBX8_YUVX8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'loop_BGR8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 8, Final II = 8, Depth = 9.
+INFO: [SCHED 204-61] Pipelining loop 'loop_RGB8_YUV8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 8, Final II = 8, Depth = 9.
+INFO: [SCHED 204-61] Pipelining loop 'loop_UYVY8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'loop_YUYV8.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'loop_Y_UV8_Y_UV8_420.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 8, Final II = 8, Depth = 10.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.84 seconds; current allocated memory: 308.664 MB.
+INFO: [HLS 200-434] Only 8 loops out of a total 16 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 13.54 seconds; current allocated memory: 311.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc68' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.36 seconds; current allocated memory: 312.189 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 312.237 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 312.254 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 312.296 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 312.612 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.43 seconds; current allocated memory: 313.069 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_frmbuf_rd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.45 seconds; current allocated memory: 313.297 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.26 seconds; current allocated memory: 314.214 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc5'.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 314.487 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIMMvideo2Bytes' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIMMvideo2Bytes'.
+INFO: [HLS 200-111]  Elapsed time: 0.36 seconds; current allocated memory: 313.810 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Bytes2MultiPixStream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'v_frmbuf_rd_mul_mul_16ns_14ns_30_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'v_frmbuf_rd_urem_14ns_3ns_2_18_seq_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Bytes2MultiPixStream'.
+INFO: [HLS 200-111]  Elapsed time: 2.87 seconds; current allocated memory: 319.471 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc68' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc68'.
+INFO: [HLS 200-111]  Elapsed time: 14.66 seconds; current allocated memory: 332.075 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.1 seconds; current allocated memory: 332.274 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'v_frmbuf_rd_mux_32_8_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvi'.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 333.479 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_frmbuf_rd' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/mm_video' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/HwReg_width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/HwReg_height' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/HwReg_stride' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/HwReg_video_format' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/HwReg_frm_buffer_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/HwReg_frm_buffer2_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_frmbuf_rd/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_frmbuf_rd' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'HwReg_width', 'HwReg_height', 'HwReg_stride', 'HwReg_video_format', 'HwReg_frm_buffer_V', 'HwReg_frm_buffer2_V' and 'return' to AXI-Lite port CTRL.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_frmbuf_rd'.
+INFO: [HLS 200-111]  Elapsed time: 1.7 seconds; current allocated memory: 336.317 MB.
+INFO: [WVHDL 200-304] Encrypting RTL VHDL done.
+INFO: [WVHDL 200-304] Encrypting RTL Verilog done.
+INFO: [RTMG 210-279] Implementing memory 'ex_synth_v_frmbuf_rd_0_0_Block_proc5_BYTES_PER_PIXEL_rom' using distributed ROMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_urem_14ns_3ns_2_18_seq_1_div'
+INFO: [RTMG 210-279] Implementing memory 'ex_synth_v_frmbuf_rd_0_0_Block_proc68_MEMORY2LIVE_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi_mapComp_rom' using distributed ROMs.
+INFO: [RTMG 210-285] Implementing FIFO 'mul_ln131_loc_c_U(ex_synth_v_frmbuf_rd_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'trunc_ln131_loc_c_U(ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_height_cast6_l_2_U(ex_synth_v_frmbuf_rd_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_frm_buffer_V_c_U(ex_synth_v_frmbuf_rd_0_0_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_frm_buffer2_V_s_25_U(ex_synth_v_frmbuf_rd_0_0_fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'tmp_U(ex_synth_v_frmbuf_rd_0_0_fifo_w6_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bytePlanes_plane0_V_s_U(ex_synth_v_frmbuf_rd_0_0_fifo_w64_d266_B)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'bytePlanes_plane1_V_s_U(ex_synth_v_frmbuf_rd_0_0_fifo_w64_d266_B)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_height_cast6_l_1_U(ex_synth_v_frmbuf_rd_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'mul_ln131_loc_c9_U(ex_synth_v_frmbuf_rd_0_0_fifo_w16_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'trunc_ln131_loc_c10_U(ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_V_val_0_V_U(ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_V_val_1_V_U(ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img_V_val_2_V_U(ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'HwReg_height_cast6_l_U(ex_synth_v_frmbuf_rd_0_0_fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'trunc_ln139_loc_c_U(ex_synth_v_frmbuf_rd_0_0_fifo_w3_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Bytes2MultiPixStream_U0_U(ex_synth_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvi_U0_U(ex_synth_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvi_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:28 ; elapsed = 00:01:31 . Memory (MB): peak = 1101.777 ; gain = 419.902 ; free physical = 1753 ; free virtual = 16711
+INFO: [VHDL 208-304] Generating VHDL RTL for v_frmbuf_rd with prefix ex_synth_v_frmbuf_rd_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_frmbuf_rd with prefix ex_synth_v_frmbuf_rd_0_0_.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 26 13:28:47 2021...
+INFO: [HLS 200-112] Total elapsed time: 105.73 seconds; peak allocated memory: 336.317 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Mon Apr 26 13:28:47 2021...
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_AXIMMvideo2Bytes.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc5.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc5_BYTES_PER_PIXEL.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc5_BYTES_PER_PIXEL_rom.dat" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc68.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc68_MEMORY2LIVE.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc68_MEMORY2LIVE_rom.dat" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Bytes2MultiPixStream.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w3_d3_A.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w6_d2_A.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w10_d2_A.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w16_d2_A.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w32_d2_A.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w64_d266_B.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi_mapComp.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi_mapComp_rom.dat" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_reg_unsigned_short_s.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvi_U0.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_mm_video_m_axi.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_mul_mul_16ns_14ns_30_1_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_mux_32_8_1_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_urem_14ns_3ns_2_18_seq_1.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd.v" already exists in file group "xilinx_veriloghlssynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_AXIMMvideo2Bytes.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc5.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc5_BYTES_PER_PIXEL.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc5_BYTES_PER_PIXEL_rom.dat" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc68.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc68_MEMORY2LIVE.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Block_proc68_MEMORY2LIVE_rom.dat" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_Bytes2MultiPixStream.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w3_d3_A.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w6_d2_A.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w8_d2_A.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w10_d2_A.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w16_d2_A.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w32_d2_A.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_fifo_w64_d266_B.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi_mapComp.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_MultiPixStream2AXIvi_mapComp_rom.dat" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_reg_unsigned_short_s.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_start_for_Bytes2MultiPixStream_U0.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_start_for_MultiPixStream2AXIvi_U0.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_CTRL_s_axi.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_mm_video_m_axi.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_mul_mul_16ns_14ns_30_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_mux_32_8_1_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd_urem_14ns_3ns_2_18_seq_1.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/ex_synth_v_frmbuf_rd_0_0_v_frmbuf_rd.v" already exists in file group "xilinx_veriloghlssimulation", cannot add it again.
+compile_c: Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 1498.191 ; gain = 2.969 ; free physical = 2134 ; free virtual = 17066
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ex_synth_v_frmbuf_rd_0_0, cache-ID = 04175ee97e46f59a.
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 26 13:28:53 2021...

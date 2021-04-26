@@ -1,0 +1,6 @@
+13:50:55 **** Incremental Build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make all 
+make: Nothing to be done for 'all'.
+
+13:50:56 Build Finished (took 567ms)
+

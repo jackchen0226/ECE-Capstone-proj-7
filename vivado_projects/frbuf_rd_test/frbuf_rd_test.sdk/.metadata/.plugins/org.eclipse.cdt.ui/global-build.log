@@ -1,0 +1,170 @@
+Running Make libs in processor_ss_processor/libsrc/uartlite_v3_2/src
+make -C processor_ss_processor/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling uartlite
+Running Make libs in processor_ss_processor/libsrc/v_frmbuf_rd_v4_1/src
+make -C processor_ss_processor/libsrc/v_frmbuf_rd_v4_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling v_frmbuf_rd
+Running Make libs in processor_ss_processor/libsrc/emaclite_v4_4/src
+make -C processor_ss_processor/libsrc/emaclite_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling emaclite
+Running Make libs in processor_ss_processor/libsrc/cpu_v2_9/src
+make -C processor_ss_processor/libsrc/cpu_v2_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling cpu
+Running Make libs in processor_ss_processor/libsrc/gpio_v4_4/src
+make -C processor_ss_processor/libsrc/gpio_v4_4/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling gpio
+Running Make libs in processor_ss_processor/libsrc/intc_v3_9/src
+make -C processor_ss_processor/libsrc/intc_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling intc
+Running Make libs in processor_ss_processor/libsrc/video_common_v4_6/src
+make -C processor_ss_processor/libsrc/video_common_v4_6/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling video_common
+Running Make libs in processor_ss_processor/libsrc/bram_v4_3/src
+make -C processor_ss_processor/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling bram
+Running Make libs in processor_ss_processor/libsrc/standalone_v7_0/src
+make -C processor_ss_processor/libsrc/standalone_v7_0/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mno-xl-soft-div -mno-xl-soft-mul -mxl-barrel-shift -mxl-multiply-high -mxl-pattern-compare" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+Compiling standalone
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Finished building libraries
+13:46:55 **** Clean-only build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make clean 
+rm -rf  ./src/platform.o ./src/xv_frmbufrd_example.o  ./src/platform.d ./src/xv_frmbufrd_example.d  test_bsp_xv_frmbufrd_example_1.elf.size  test_bsp_xv_frmbufrd_example_1.elf
+ 
+13:46:55 **** Build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make all 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/processor_ss_processor/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/xv_frmbufrd_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xv_frmbufrd_example.o" -I../../test_bsp/processor_ss_processor/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xv_frmbufrd_example.d" -MT"src/xv_frmbufrd_example.o" -o "src/xv_frmbufrd_example.o" "../src/xv_frmbufrd_example.c"
+../src/xv_frmbufrd_example.c: In function 'CalcStride':
+../src/xv_frmbufrd_example.c:371:7: warning: "/*" within comment [-Wcomment]
+       /* 4 bytes per 3 pixels (Y_UV10, Y_UV10_420, Y10) */
+        
+../src/xv_frmbufrd_example.c:379:7: warning: "/*" within comment [-Wcomment]
+       /* 1 byte per pixel (Y_UV8, Y_UV8_420, Y8) */
+        
+../src/xv_frmbufrd_example.c:393:7: warning: "/*" within comment [-Wcomment]
+       /* 5 bytes per pixel (RGBX12, YUVX12) */
+        
+../src/xv_frmbufrd_example.c:400:7: warning: "/*" within comment [-Wcomment]
+       /* 3 bytes per 2 pixels (Y_UV12, Y_UV12_420, Y12) */
+        
+../src/xv_frmbufrd_example.c:407:7: warning: "/*" within comment [-Wcomment]
+       /* 6 bytes per pixel (RGB16, YUV16) */
+        
+../src/xv_frmbufrd_example.c:411:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/xv_frmbufrd_example.c:417:7: warning: "/*" within comment [-Wcomment]
+       /* 2 bytes per pixel (YUYV8, UYVY8, Y_UV16, Y_UV16_420, Y16) */
+        
+../src/xv_frmbufrd_example.c:422:7: warning: "/*" within comment [-Wcomment]
+       /* 4 bytes per pixel */
+        
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_RGB' not handled in switch [-Wswitch]
+   switch (Cfmt) {
+   ^~~~~~
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YCRCB_444' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YCRCB_422' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YCRCB_420' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YONLY' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_RGBA' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YCRCBA_444' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_RGBX8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_YUVX8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_YUYV8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_RGBA8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_YUVA8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_RGBX10' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_YUVX10' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_RGB565' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV8_420' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV10' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV10_420' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y8' not handled in switch [-Wswitch]
+Finished building: ../src/xv_frmbufrd_example.c
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y10' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_BGRA8' not handled in switch [-Wswitch]
+ 
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_BGRX8' not handled in switch [-Wswitch]
+Building target: test_bsp_xv_frmbufrd_example_1.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/processor_ss_processor/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mxl-multiply-high -Wl,--no-relax -Wl,--gc-sections -o "test_bsp_xv_frmbufrd_example_1.elf"  ./src/platform.o ./src/xv_frmbufrd_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_UYVY8' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_RGBX12' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_YUVX12' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV12' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV12_420' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y12' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_RGB16' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_YUV16' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV16' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y_UV16_420' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_Y16' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_END' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YCBCR_422' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_YCBCR_420' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_NUM_SUPPORTED' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_UNKNOWN' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_STRM_START' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_STRM_END' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_MEM_START' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_NUM_STRM' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c:366:3: warning: enumeration value 'XVIDC_CSF_NUM_MEM' not handled in switch [-Wswitch]
+../src/xv_frmbufrd_example.c: In function 'main':
+../src/xv_frmbufrd_example.c:681:6: warning: "/*" within comment [-Wcomment]
+     //*((uint8_t*)0xA0000000U+j+i*800*3+1) = 0;
+       
+../src/xv_frmbufrd_example.c:682:6: warning: "/*" within comment [-Wcomment]
+     //*((uint8_t*)0xA0000000U+j+i*800*3+2) = 0;
+       
+../src/xv_frmbufrd_example.c:590:7: warning: variable 'Lock' set but not used [-Wunused-but-set-variable]
+   int Lock = FALSE;
+       ^~~~
+../src/xv_frmbufrd_example.c:589:7: warning: unused variable 'TestCount' [-Wunused-variable]
+   int TestCount = 0;
+       ^~~~~~~~~
+../src/xv_frmbufrd_example.c:588:7: warning: unused variable 'PassCount' [-Wunused-variable]
+   int PassCount = 0;
+       ^~~~~~~~~
+../src/xv_frmbufrd_example.c:587:7: warning: unused variable 'FailCount' [-Wunused-variable]
+   int FailCount = 0;
+       ^~~~~~~~~
+../src/xv_frmbufrd_example.c:585:7: warning: unused variable 'valid' [-Wunused-variable]
+   int valid;
+       ^~~~~
+../src/xv_frmbufrd_example.c:583:15: warning: unused variable 'index' [-Wunused-variable]
+   int Status, index;
+               ^~~~~
+At top level:
+../src/xv_frmbufrd_example.c:491:12: warning: 'ValidateTestCase' defined but not used [-Wunused-function]
+ static int ValidateTestCase(u16 PixPerClk,
+            ^~~~~~~~~~~~~~~~
+Finished building target: test_bsp_xv_frmbufrd_example_1.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size test_bsp_xv_frmbufrd_example_1.elf  |tee "test_bsp_xv_frmbufrd_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  37272	    924	   3668	  41864	   a388	test_bsp_xv_frmbufrd_example_1.elf
+Finished building: test_bsp_xv_frmbufrd_example_1.elf.size
+ 
+13:47:08 **** Incremental Build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:49:54 **** Incremental Build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:50:11 **** Incremental Build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:50:55 **** Incremental Build of configuration Debug for project test_bsp_xv_frmbufrd_example_1 ****
+make all 
+make: Nothing to be done for 'all'.
