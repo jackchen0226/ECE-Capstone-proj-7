@@ -6,7 +6,7 @@
 
 #include <stdint.h> //For size-specific types.
 #include <stdlib.h> //For rand().
-#include <time.h> //For rand().
+#include <time.h> //For time stuff.
 #include "gfe_screen.h" //To control physical screen.
 #include "SDL2_Screen.h" //To control a virtual screen.
 
@@ -25,7 +25,7 @@
 #define GREEN	0x0a0
 #define RED	0x00c
 #define BLUE	0xf77
-#define ORANGE	0x09f
+#define ORANGE	0x08e //0x09f
 #define WHITE 	0xfff
 
 void CreateObject(uint16_t *Object, int Shape)
@@ -371,6 +371,9 @@ int main()
 	int lim = 0; //limiter.
 	int ObjectInPlay = 0;
 	int lost = 0;
+	float speed = .2; //Game speed in seconds between ticks.
+	clock_t start = clock(); //Start time.
+	clock_t end = 0; //End time.
 	srand(time(NULL));
 	for(int i = 0; i < 200; ++i)
 	{
@@ -509,20 +512,31 @@ int main()
 					}
 					break;
 			}
-			if(ArenaTick(GameArea, Object, &x, &y))
+			if(((end - start)/ (float) CLOCKS_PER_SEC) >= .2)
 			{
-				if((x == 4) && (y == 0))
+				if(ArenaTick(GameArea, Object, &x, &y))
 				{
-					lost = 1;
+					if((x == 4) && (y == 0))
+					{
+						lost = 1;
+					}
+					else
+					{
+						//Check for full rows. Game will speed up the more rows you clear.
+						speed = speed * (1 - (CheckRows(GameArea) * .05)); //Game will speed up by 5% or more.
+						
+
+					}
+					ObjectInPlay = 0;
+					x = 4;
+					y = 0;
+					flippos = 0;
 				}
 				else
 				{
-					CheckRows(GameArea); //Check for full rows.
+					DrawObject(GameArea, Object, x, y);
 				}
-				ObjectInPlay = 0;
-				x = 4;
-				y = 0;
-				flippos = 0;
+				start = clock();
 			}
 			else
 			{
@@ -531,6 +545,7 @@ int main()
 			RenderArea(Physical, GameArea);
 			VirUpdateFrame(Virtual, Physical);
 			VirRender(Virtual);
+			end = clock();
 			if(lost)
 			{
 				lost = 0;
