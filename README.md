@@ -30,11 +30,26 @@ In development
 
 ## Overview
 
-Implementations on an SoC programmed on a VCU118 to have video output
+This repository contains files and Xilinx Vivado projects to program a PMOD DVI daughterboard onto a VCU118 FPGA development board. Be aware that the PMOD specification on the VCU118 development board are outdated, and require pullup resistor PCBs to be added before inserting the DVI board.
 
 ## Documentation
 
-Would be good to have.
+[Project Design Specification](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Project%20Design%20Specification%20and%20Timeline.pdf)
+
+[Project Test Plan](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Project%20Test%20Plan.pdf)
+
+[Project schedule Excel sheet](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Schedule.xlsx)
+
+[Pullup resistor schematic files](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/main/Pullup%20Resistor%20Files)
+
+[VCU118 display test](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/dev/vcu118_display_test)
+
+[VCU118 display subsystem](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/dev/vivado_projects/display_subsystem_test)
+
+[VCU118 framebuffer read test](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/dev/vivado_projects/frbuf_rd_test)
+
+[Driver files](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/dev/driver)
+
 
 
 ## Creators
