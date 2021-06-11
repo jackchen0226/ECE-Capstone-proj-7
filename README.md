@@ -26,7 +26,7 @@
 
 ## Status
 
-In development
+Sample project completed
 
 ## Overview
 
@@ -41,6 +41,10 @@ This repository contains files and Xilinx Vivado projects to program a PMOD DVI 
 [Project schedule Excel sheet](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Schedule.xlsx)
 
 [Pullup resistor schematic files](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/main/Pullup%20Resistor%20Files)
+
+[Final Report]()
+
+[Appendix A - Issues]()
 
 ## Prototype projects
 
