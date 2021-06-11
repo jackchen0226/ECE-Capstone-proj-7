@@ -34,7 +34,7 @@ Implementations on an SoC programmed on a VCU118 to have video output
 
 ## Documentation
 
-Would be good to have.
+[PDS] (#https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Project%20Design%20Specification%20and%20Timeline.pdf)
 
 
 ## Creators
