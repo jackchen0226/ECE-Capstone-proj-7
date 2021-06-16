@@ -44,7 +44,7 @@ This repository contains files and Xilinx Vivado projects to program a PMOD DVI 
 
 [Final Report](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Final%20Report%20Rev%201.0.0.pdf)
 
-[Final Report Appendix A - Issues](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Final%20Report%20-%20Issues%20Appendix%20Rev%201.0.0.pdf)
+[Final Report Appendix A - Issues](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Final%20Report%20-%20Issues%20Appendix%20Rev%201.1.0.pdf)
 
 ## Prototype projects
 
