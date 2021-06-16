@@ -42,9 +42,9 @@ This repository contains files and Xilinx Vivado projects to program a PMOD DVI 
 
 [Pullup resistor schematic files](https://github.com/jackchen0226/ECE-Capstone-proj-7/tree/main/Pullup%20Resistor%20Files)
 
-[Final Report]()
+[Final Report](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Final%20Report%20Rev%201.0.0.pdf)
 
-[Appendix A - Issues]()
+[Final Report Appendix A - Issues](https://github.com/jackchen0226/ECE-Capstone-proj-7/blob/main/Final%20Report%20-%20Issues%20Appendix%20Rev%201.0.0.pdf)
 
 ## Prototype projects
 
